@@ -84,3 +84,19 @@ h6 {
 .logo-image:hover {
   animation: shake 0.5s ease-in-out;
 }
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.prose th,
+.prose td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.prose th {
+  background-color: #f2f2f2;
+}
