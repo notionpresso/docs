@@ -10,6 +10,8 @@ interface GuidePageProps {
   };
 }
 
+export const runtime = 'edge';
+
 // TODO: Add URL and image
 export async function generateMetadata({
   params,
