@@ -1,3 +1,5 @@
+// lib/mdx.ts
+
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -7,20 +9,63 @@ import { getGroupOrder, GroupId } from "@/constants/group";
 
 const contentDirectory = path.join(process.cwd(), "content", "guide");
 
-interface DocumentData {
+export interface Document {
   slug: string;
-  content: string;
   title: string;
   group: string;
-  prevDocument: { slug: string; title: string; group: string } | null;
-  nextDocument: { slug: string; title: string; group: string } | null;
+  content: string;
 }
 
-export async function getDocumentBySlug(
+export interface DocumentData extends Document {
+  prevDocument: Document | null;
+  nextDocument: Document | null;
+}
+
+export function getAllDocuments(lang: string): Document[] {
+  const langDir = path.join(contentDirectory, lang);
+  const documents = getAllDocumentsRecursive(langDir, lang);
+  return documents;
+}
+
+function getAllDocumentsRecursive(dir: string, lang: string): Document[] {
+  if (!fs.existsSync(dir)) {
+    return [];
+  }
+
+  const entries = fs.readdirSync(dir);
+  let documents: Document[] = [];
+
+  entries.forEach((entry) => {
+    const entryPath = path.join(dir, entry);
+    const stat = fs.statSync(entryPath);
+
+    if (stat.isDirectory()) {
+      documents = documents.concat(getAllDocumentsRecursive(entryPath, lang));
+    } else if (entry.endsWith(".md")) {
+      const fileContents = fs.readFileSync(entryPath, "utf8");
+      const { data, content } = matter(fileContents);
+      const groupOrder = getGroupOrder(data.group as GroupId);
+      const processedContent = remark().use(html).processSync(content);
+      const contentHtml = processedContent.toString();
+
+      documents.push({
+        slug: data.slug,
+        title: data.title || "Untitled",
+        group: data.group || "",
+        content: contentHtml,
+      });
+    }
+  });
+
+  return documents;
+}
+
+export function getDocumentBySlug(
   lang: string,
   group: string,
   slug: string,
-): Promise<DocumentData> {
+  allDocuments: Document[]
+): DocumentData {
   const notFoundDocument: DocumentData = {
     slug: "",
     content: "<p>Document not found</p>",
@@ -34,89 +79,25 @@ export async function getDocumentBySlug(
     return notFoundDocument;
   }
 
-  const groupOrder = getGroupOrder(group as GroupId);
-  const groupDir = path.join(contentDirectory, lang, `${groupOrder}. ${group}`);
+  // Filter documents in the same group and sort them if necessary
+  const documentsInGroup = allDocuments.filter((doc) => doc.group === group);
 
-  if (!fs.existsSync(groupDir)) {
+  const currentIndex = documentsInGroup.findIndex((doc) => doc.slug === slug);
+
+  if (currentIndex === -1) {
     return notFoundDocument;
   }
 
-  const files = fs.readdirSync(groupDir);
-  let targetFile = null;
-
-  for (const file of files) {
-    const filePath = path.join(groupDir, file);
-    const stat = fs.statSync(filePath);
-
-    if (stat.isFile()) {
-      const fileContents = fs.readFileSync(filePath, "utf8");
-      const { data } = matter(fileContents);
-
-      if (data.slug === slug) {
-        targetFile = filePath;
-        break;
-      }
-    }
-  }
-
-  if (!targetFile) {
-    return notFoundDocument;
-  }
-
-  const fileContents = fs.readFileSync(targetFile, "utf8");
-  const { data, content } = matter(fileContents);
-  const processedContent = await remark().use(html).process(content);
-  const contentHtml = processedContent.toString();
-
-  const allDocuments = getAllDocuments(lang);
-  const currentIndex = allDocuments.findIndex((doc) => doc.slug === slug);
-  const prevDocument = currentIndex > 0 ? allDocuments[currentIndex - 1] : null;
+  const document = documentsInGroup[currentIndex];
+  const prevDocument = currentIndex > 0 ? documentsInGroup[currentIndex - 1] : null;
   const nextDocument =
-    currentIndex < allDocuments.length - 1
-      ? allDocuments[currentIndex + 1]
+    currentIndex < documentsInGroup.length - 1
+      ? documentsInGroup[currentIndex + 1]
       : null;
 
   return {
-    slug,
-    content: contentHtml,
-    title: data.title || "Untitled",
-    group: data.group || "",
+    ...document,
     prevDocument,
     nextDocument,
   };
-}
-
-function getAllDocumentsRecursive(dir: string): any[] {
-  if (!fs.existsSync(dir)) {
-    return [];
-  }
-
-  const files = fs.readdirSync(dir);
-  let documents: any[] = [];
-
-  files.forEach((file) => {
-    const filePath = path.join(dir, file);
-    const stat = fs.statSync(filePath);
-
-    if (stat.isDirectory()) {
-      documents = documents.concat(getAllDocumentsRecursive(filePath));
-    } else if (file.endsWith(".md")) {
-      const fileContents = fs.readFileSync(filePath, "utf8");
-      const { data } = matter(fileContents);
-      documents.push({
-        ...data,
-        slug: data.slug,
-        group: data.group,
-      });
-    }
-  });
-
-  return documents;
-}
-
-export function getAllDocuments(lang: string) {
-  const langDir = path.join(contentDirectory, lang);
-  const documents = getAllDocumentsRecursive(langDir);
-
-  return documents;
 }
