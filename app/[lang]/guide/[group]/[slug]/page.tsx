@@ -16,10 +16,10 @@ interface GuidePageProps {
 
 // Generate static params at build time
 export async function generateStaticParams() {
-  const langs = ["en", "ko"]; // Replace with your supported languages
+  const supportedLanguages = ["en", "ko"];
   const params: GuidePageProps["params"][] = [];
 
-  for (const lang of langs) {
+  for (const lang of supportedLanguages) {
     const allDocuments = getAllDocuments(lang);
     allDocuments.forEach((doc) => {
       params.push({
