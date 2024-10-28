@@ -1,13 +1,23 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "@/components/ui/header";
 import { ThemeProvider } from "@/components/theme-provider";
-import Navigation from "@/components/navigation";
 
 const pretendard = localFont({
-  src: "./fonts/Pretendard-Regular.woff",
+  src: [
+    {
+      path: "./fonts/Pretendard-Regular.woff",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Pretendard-Bold.woff",
+      weight: "700",
+      style: "normal",
+    },
+  ],
   variable: "--font-pretendard",
-  weight: "100 900",
 });
 
 export const metadata: Metadata = {
@@ -35,8 +45,8 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${pretendard.variable} font-sans`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Navigation />
-          <main className="dark:bg-black">{children}</main>
+          <Header />
+          <main>{children}</main>
         </ThemeProvider>
       </body>
     </html>
