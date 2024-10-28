@@ -6,6 +6,7 @@ export interface TOCItem {
 export function generateTOC(content: string): TOCItem[] {
   const lines = content.split("\n");
   const toc: TOCItem[] = [];
+  console.log(lines);
 
   lines.forEach((line) => {
     if (line.startsWith("<h2>")) {
