@@ -20,7 +20,10 @@ function getPreferredLanguage(request: NextRequest): string {
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  if (pathname.match(/\.(svg|png|jpg|jpeg|gif|ico)$/)) {
+  if (
+    pathname.startsWith("/assets/") ||
+    pathname.match(/\.(svg|png|jpg|jpeg|gif|ico|glb)$/)
+  ) {
     return NextResponse.next();
   }
 
@@ -40,5 +43,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!api|_next/static|_next/image|favicon.ico).*)"],
+  matcher: ["/((?!api|_next/static|_next/image|favicon.ico|public|assets).*)"],
 };
