@@ -28,16 +28,13 @@ export default function MobileSidebar({
   const [isOpen, setIsOpen] = useState(false);
   const [openGroup, setOpenGroup] = useState<string | null>(null);
 
-  const groupedDocuments = documents.reduce(
-    (acc, doc) => {
-      if (!acc[doc.group]) {
-        acc[doc.group] = [];
-      }
-      acc[doc.group].push(doc);
-      return acc;
-    },
-    {} as Record<string, Document[]>,
-  );
+  const groupedDocuments = documents.reduce((acc, doc) => {
+    if (!acc[doc.group]) {
+      acc[doc.group] = [];
+    }
+    acc[doc.group].push(doc);
+    return acc;
+  }, {} as Record<string, Document[]>);
 
   const toggleDropdown = () => setIsOpen(!isOpen);
   const toggleGroup = (group: string) => {

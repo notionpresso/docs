@@ -1,6 +1,6 @@
 "use client";
 
-import useIsMobile from "../hooks/useIsMobile";
+import useIsMobile from "@/hooks/useIsMobile";
 
 interface DynamicLayoutProps {
   sidebar: React.ReactNode;
@@ -19,7 +19,7 @@ export default function DynamicLayout({
 
   return (
     <div
-      className={`flex flex-col justify-center gap-5 md:flex-row ${isMobile ? "p-4" : "p-5"}`}
+      className={`flex flex-col justify-center gap-5 md:flex-row bg-primary ${isMobile ? "p-4" : "p-5"}`}
     >
       {!isMobile && <div>{sidebar}</div>}
       {isMobile && <div>{mobileSidebar}</div>}

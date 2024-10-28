@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Navigation, ThemeProvider } from "@/components";
+import { ThemeProvider } from "@/components/theme-provider";
+import Navigation from "@/components/navigation";
 
 const pretendard = localFont({
   src: "./fonts/Pretendard-Regular.woff",
