@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import Image from "next/image";
-import LanguageSelector from "./language-selector";
+import { LanguageSelector } from "@/components/ui/language-selector";
 
 export default function Navigation() {
   const params = useParams();
