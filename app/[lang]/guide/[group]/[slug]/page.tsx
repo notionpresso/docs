@@ -64,7 +64,7 @@ export default async function Page({ params }: GuidePageProps) {
     lang,
     group,
     slug,
-    allDocuments
+    allDocuments,
   );
 
   return (

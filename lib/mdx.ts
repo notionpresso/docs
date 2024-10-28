@@ -65,7 +65,7 @@ export function getDocumentBySlug(
   lang: string,
   group: string,
   slug: string,
-  allDocuments: Document[]
+  allDocuments: Document[],
 ): DocumentData {
   const notFoundDocument: DocumentData = {
     slug: "",
@@ -90,7 +90,8 @@ export function getDocumentBySlug(
   }
 
   const document = documentsInGroup[currentIndex];
-  const prevDocument = currentIndex > 0 ? documentsInGroup[currentIndex - 1] : null;
+  const prevDocument =
+    currentIndex > 0 ? documentsInGroup[currentIndex - 1] : null;
   const nextDocument =
     currentIndex < documentsInGroup.length - 1
       ? documentsInGroup[currentIndex + 1]
