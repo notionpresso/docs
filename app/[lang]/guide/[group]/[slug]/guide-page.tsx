@@ -10,7 +10,7 @@ import {
   NavigationButton,
   Sidebar,
   TOC,
-} from "@/components";
+} from "@/components/docs";
 import { generateTOC } from "@/lib/generateTOC";
 
 interface GuidePageProps {
