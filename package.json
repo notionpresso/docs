@@ -11,8 +11,13 @@
   },
   "dependencies": {
     "@heroicons/react": "2.1.5",
+    "@react-three/drei": "9.115.0",
+    "@react-three/fiber": "8.17.10",
     "@tailwindcss/typography": "0.5.15",
     "@types/hast": "3.0.4",
+    "clsx": "2.1.1",
+    "framer-motion": "11.11.10",
+    "framer-motion-3d": "11.11.10",
     "gray-matter": "4.0.3",
     "next": "14.2.11",
     "next-themes": "0.3.0",
@@ -23,7 +28,8 @@
     "rehype-raw": "7.0.0",
     "remark": "15.0.1",
     "remark-gfm": "4.0.0",
-    "remark-html": "16.0.1"
+    "remark-html": "16.0.1",
+    "tailwind-merge": "2.5.4"
   },
   "devDependencies": {
     "@types/node": "^20",
