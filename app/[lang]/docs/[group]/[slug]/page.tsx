@@ -1,7 +1,7 @@
 // app/[lang]/guide/[group]/[slug]/page.tsx
 import { getAllDocuments, getDocumentBySlug } from "@/lib/mdx";
 import { Metadata } from "next";
-import GuidePage from "./guide-page";
+import GuidePage from "@/components/docs/guide-page";
 
 interface GuidePageProps {
   params: {
