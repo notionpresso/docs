@@ -25,9 +25,7 @@ export default function Navigation() {
               className="logo-image"
               style={{ cursor: "pointer" }}
             />
-            <p className="dark:text-white hidden sm:block">
-              react-notion-custom
-            </p>
+            <p className="dark:text-white hidden sm:block">Notionpresso</p>
           </Link>
 
           <div className="flex gap-5 items-center ml-auto">

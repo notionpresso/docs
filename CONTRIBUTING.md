@@ -114,5 +114,5 @@
 ## 7. Additional Notes
 
 - Manage documents and blog posts in Markdown format
-- Include practical examples using the react-notion-custom library on the landing page
+- Include practical examples using the Notionpresso library on the landing page
 - Encourage continuous content updates and community participation
