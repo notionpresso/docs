@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://notionpresso.com
+
+# Sitemaps
+Sitemap: https://notionpresso.com/sitemap.xml
