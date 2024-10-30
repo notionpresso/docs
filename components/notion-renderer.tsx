@@ -2,7 +2,7 @@
 
 import { Notion } from "@notionpresso/react";
 
-const NotionRenderer = ({
+export const NotionRenderer = ({
   blocks,
   title,
   cover,
@@ -21,5 +21,3 @@ const NotionRenderer = ({
     </Notion>
   );
 };
-
-export default NotionRenderer;
