@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@heroicons/react": "2.1.5",
+    "@notionpresso/react": "^0.0.5",
     "@tailwindcss/typography": "0.5.15",
     "@types/hast": "3.0.4",
     "gray-matter": "4.0.3",
