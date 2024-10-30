@@ -21,14 +21,14 @@ const pretendard = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "react-notion-custom Docs",
+  title: "Notionpresso Docs",
   description:
-    "Comprehensive documentation for react-notion-custom library, a powerful tool for rendering Notion pages in React applications.",
+    "Comprehensive documentation for Notionpresso library, a powerful tool for rendering Notion pages in React applications.",
   keywords: "react, notion, custom, documentation, library, rendering",
   openGraph: {
-    title: "react-notion-custom Documentation",
+    title: "Notionpresso Documentation",
     description:
-      "Learn how to use react-notion-custom to render Notion pages in your React apps.",
+      "Learn how to use Notionpresso to render Notion pages in your React apps.",
     type: "website",
     // TODO: Add URL and image
     // url: "",
