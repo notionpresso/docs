@@ -20,7 +20,7 @@ function getPreferredLanguage(request: NextRequest): string {
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  if (pathname.match(/\.(svg|png|jpg|jpeg|gif|ico)$/)) {
+  if (pathname.match(/\.(svg|png|jpg|jpeg|gif|ico|json|txt|pdf|xml|js|css)$/)) {
     return NextResponse.next();
   }
 
