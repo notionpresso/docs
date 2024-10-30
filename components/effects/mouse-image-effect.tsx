@@ -45,9 +45,7 @@ export default function MouseImageEffect() {
       className="relative h-screen overflow-hidden flex items-center justify-center bg-white dark:bg-black"
     >
       <div className="text-center z-10 font-Inter text-black dark:text-white">
-        <h1 className="text-xl font-bold mb-4 md:text-6xl">
-          react-notion-custom
-        </h1>
+        <h1 className="text-xl font-bold mb-4 md:text-6xl">Notionpresso</h1>
         <p className="text-sm md:text-xl">
           Create Your Custom Blog with Notion
         </p>

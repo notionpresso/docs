@@ -42,10 +42,10 @@ export async function generateMetadata({
   const document = getDocumentBySlug(lang, group, slug, allDocuments);
 
   return {
-    title: `${document.title} | react-notion-custom Docs`,
+    title: `${document.title} | Notionpresso Docs`,
     description: document.content.slice(0, 160),
     openGraph: {
-      title: `${document.title} | react-notion-custom Docs`,
+      title: `${document.title} | Notionpresso Docs`,
       description: document.content.slice(0, 160),
       // url: "",
     },
