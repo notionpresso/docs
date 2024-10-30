@@ -30,7 +30,7 @@ export default function Navigation() {
 
           <div className="flex gap-5 items-center ml-auto">
             <Link
-              href={`/${lang}/guide/getting-started/introduction`}
+              href={`/${lang}/docs`}
               className="text-black dark:text-white items-center px-1 pt-1 text-sm font-medium"
             >
               Docs
