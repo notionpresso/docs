@@ -35,8 +35,9 @@ export function middleware(request: NextRequest) {
   ) {
     const currentViewport = request.nextUrl.searchParams.get("viewport");
     if (!currentViewport) {
-      const newUrl = new URL(request.url);
+      const newUrl = request.nextUrl;
       newUrl.searchParams.set("viewport", viewport);
+      console.log("rewrite", newUrl.searchParams.get("viewport"));
       return NextResponse.redirect(newUrl);
     }
     return NextResponse.next();
