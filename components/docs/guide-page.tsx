@@ -76,6 +76,7 @@ export default function GuidePage({
           {content}
         </ReactMarkdown>
       </div>
+
       <div className="mt-8 mb-4 flex justify-between gap-4">
         <div className="flex-1">
           {prevDocument && (
