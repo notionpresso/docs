@@ -1,13 +1,14 @@
 "use client";
 
+import isMobile from "@/lib/is-mobile";
 import { useState, useEffect } from "react";
 
 const useIsMobile = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [mobile, setMobile] = useState(isMobile());
 
   useEffect(() => {
     const checkIsMobile = () => {
-      setIsMobile(window.innerWidth < 768);
+      setMobile(isMobile());
     };
 
     checkIsMobile();
@@ -16,7 +17,7 @@ const useIsMobile = () => {
     return () => window.removeEventListener("resize", checkIsMobile);
   }, []);
 
-  return isMobile;
+  return mobile;
 };
 
 export default useIsMobile;
