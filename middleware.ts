@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import { userAgent } from "next/server";
 
 const supportedLanguages = ["en", "ko"];
 
@@ -24,17 +25,26 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  const { device } = userAgent(request);
+  const viewport = device.type === "mobile" ? "mobile" : "desktop";
+
   if (
     supportedLanguages.some(
       (lang) => pathname.startsWith(`/${lang}/`) || pathname === `/${lang}`,
     )
   ) {
+    const currentViewport = request.nextUrl.searchParams.get("viewport");
+    if (!currentViewport) {
+      const newUrl = new URL(request.url);
+      newUrl.searchParams.set("viewport", viewport);
+      return NextResponse.redirect(newUrl);
+    }
     return NextResponse.next();
   }
 
   const lang = getPreferredLanguage(request);
-
   const newUrl = new URL(`/${lang}${pathname}`, request.url);
+  newUrl.searchParams.set("viewport", viewport);
 
   return NextResponse.redirect(newUrl);
 }
