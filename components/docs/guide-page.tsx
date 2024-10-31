@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import rehypeHighlight from "rehype-highlight";
+import "highlight.js/styles/github-dark.css"; // 다크 테마
 import {
   DynamicLayout,
   MobileSidebar,
@@ -70,7 +71,7 @@ export default function GuidePage({
           {group} &gt; {title}
         </p>
         <ReactMarkdown
-          className="prose prose-sm sm:prose lg:prose-lg dark:prose-invert prose-headings:dark:text-white prose-p:dark:text-gray-300 prose-strong:dark:text-white prose-code:dark:text-white prose-ul:dark:text-gray-300 prose-ol:dark:text-gray-300"
+          className="prose prose-sm prose-block-code:bg-transparent sm:prose lg:prose-lg dark:prose-invert prose-headings:dark:text-white prose-p:dark:text-gray-300 prose-strong:dark:text-white prose-code:dark:text-white prose-ul:dark:text-gray-300 prose-ol:dark:text-gray-300"
           rehypePlugins={[rehypeRaw, rehypeHighlight]}
         >
           {content}
