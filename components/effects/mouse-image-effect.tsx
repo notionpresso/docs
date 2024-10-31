@@ -41,7 +41,6 @@ export default function MouseImageEffect() {
   return (
     <div
       ref={containerRef}
-      onMouseMove={handleMouseMove}
       className="relative h-screen overflow-hidden flex items-center justify-center bg-white dark:bg-black"
     >
       <div className="text-center z-10 font-Inter text-black dark:text-white">

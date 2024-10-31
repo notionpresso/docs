@@ -19,11 +19,10 @@ export default function DynamicLayout({
 
   return (
     <div
-      className={`flex flex-col justify-center gap-5 md:flex-row bg-primary ${isMobile ? "p-4" : "p-5"}`}
+      className={`flex relative flex-col w-full justify-center gap-5 md:flex-row bg-primary ${isMobile ? "p-4" : "p-5"}`}
     >
-      {!isMobile && <div>{sidebar}</div>}
-      {isMobile && <div>{mobileSidebar}</div>}
-      <div className={`${isMobile ? "w-full" : "w-fit"} `}>{children}</div>
+      <div>{isMobile ? mobileSidebar : sidebar}</div>
+      <div className="max-w-[720px]">{children}</div>
       {!isMobile && <div>{toc}</div>}
     </div>
   );
