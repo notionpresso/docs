@@ -1,5 +1,6 @@
 // tailwind.config.ts
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
 const config: Config = {
   content: [
@@ -71,6 +72,14 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    plugin(function ({ addVariant }) {
+      addVariant(
+        "prose-block-code",
+        '&.prose :where(pre)>code:not(:where([class~="not-prose"] *))',
+      );
+    }),
+  ],
 };
 export default config;
