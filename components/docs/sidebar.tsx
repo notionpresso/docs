@@ -22,16 +22,19 @@ export default function Sidebar({
   currentGroup,
   lang,
 }: SidebarProps) {
-  const groupedDocuments = documents.reduce((acc, doc) => {
-    if (!acc[doc.group]) {
-      acc[doc.group] = [];
-    }
-    acc[doc.group].push(doc);
-    return acc;
-  }, {} as Record<string, Document[]>);
+  const groupedDocuments = documents.reduce(
+    (acc, doc) => {
+      if (!acc[doc.group]) {
+        acc[doc.group] = [];
+      }
+      acc[doc.group].push(doc);
+      return acc;
+    },
+    {} as Record<string, Document[]>,
+  );
 
   return (
-    <nav className="w-64 h-fit p-4 rounded-md border-2 dark:border-white border-white flex flex-col gap-2">
+    <nav className="w-64 sticky top-5 h-fit p-4 rounded-md border-2 dark:border-white border-white flex flex-col gap-2">
       <div>
         {Object.entries(groupedDocuments).map(([group, docs]) => (
           <div key={group}>
