@@ -1,0 +1,2176 @@
+{
+  "object": "page",
+  "id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c",
+  "created_time": "2024-10-31T06:23:00.000Z",
+  "last_edited_time": "2024-10-31T06:23:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+  },
+  "cover": null,
+  "icon": null,
+  "parent": {
+    "type": "database_id",
+    "database_id": "130ce18c-fd83-8094-8989-d879a60eeb80"
+  },
+  "archived": false,
+  "in_trash": false,
+  "properties": {
+    "태그": {
+      "id": "%3ESk%5E",
+      "type": "select",
+      "select": {
+        "id": "WcSA",
+        "name": "en",
+        "color": "orange"
+      }
+    },
+    "title": {
+      "id": "title",
+      "type": "title",
+      "title": [
+        {
+          "type": "text",
+          "text": {
+            "content": "🌏 NotionPresso Contributing Guidelines",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "🌏 NotionPresso Contributing Guidelines",
+          "href": null
+        }
+      ]
+    }
+  },
+  "url": "https://www.notion.so/NotionPresso-Contributing-Guidelines-130ce18cfd8380179202fdf73b9f1c9c",
+  "public_url": null,
+  "request_id": "ddf8e077-b9f2-450e-a3e2-14b44bf2e218",
+  "blocks": [
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-808e-9a08-fdbd5d0f381a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "🚨 Areas Needing Urgent Improvement",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "🚨 Areas Needing Urgent Improvement",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-800a-867a-f9027878535a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The NotionPresso project currently has several areas that need immediate attention:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "The NotionPresso project currently has several areas that need immediate attention:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-803c-b1a2-e2f42ed5f7e1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Code Block Indentation Issues\nThere are indentation problems in documentation code blocks. For example:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Code Block Indentation Issues\nThere are indentation problems in documentation code blocks. For example:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-804f-a2b5-fbafaedb6243",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Problematic code:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Problematic code:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8029-abbd-f3235de2af67",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "code",
+      "code": {
+        "caption": [],
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "function example() {\nconst value = 'test'\nreturn {\ndata: value\n}\n}\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "function example() {\nconst value = 'test'\nreturn {\ndata: value\n}\n}\n",
+            "href": null
+          }
+        ],
+        "language": "typescript"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8001-b859-cfbac07cd386",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Correct code:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Correct code:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8092-bfa7-f9ac037df2ea",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "code",
+      "code": {
+        "caption": [],
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "function example() {\n  const value = 'test'\n  return {\n    data: value\n  }\n}\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "function example() {\n  const value = 'test'\n  return {\n    data: value\n  }\n}\n",
+            "href": null
+          }
+        ],
+        "language": "typescript"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-806f-a190-d0c71c980027",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Legacy Package Name References\nThroughout the project, old package names are still being used:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Legacy Package Name References\nThroughout the project, old package names are still being used:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-809b-8ef8-c92ff2fbda56",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "react-notion-custom",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "react-notion-custom",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " → ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " → ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "@notionpresso/react",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "@notionpresso/react",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8078-af8c-d1d2af685f0b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "notion-dump",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "notion-dump",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " → ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " → ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "@notionpresso/cli",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "@notionpresso/cli",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8059-b21b-c6acb99dcff6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "These legacy references need to be updated to the new package names.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "These legacy references need to be updated to the new package names.",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-80fb-ab5e-ef9cfcb7af75",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Multi-language Documentation Needed\nCurrently, documentation is only available in English and Korean. We need translations in various languages to make the project more accessible to developers worldwide.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Multi-language Documentation Needed\nCurrently, documentation is only available in English and Korean. We need translations in various languages to make the project more accessible to developers worldwide.",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-801b-9da0-f4c45892a173",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "quote",
+      "quote": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "We're actively seeking developers who can help address these issues! 🙏",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "We're actively seeking developers who can help address these issues! 🙏",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8046-b42d-dbc1e990db34",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Project Introduction",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Project Introduction",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-809b-8f92-edfe93d579d3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "NotionPresso is an open-source project that enables creating personal blogs using Notion as a CMS. It consists of the following packages:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "NotionPresso is an open-source project that enables creating personal blogs using Notion as a CMS. It consists of the following packages:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-809a-88ae-d60dcef343c9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "@notionpresso/react",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "@notionpresso/react",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ": React rendering library for Notion content",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ": React rendering library for Notion content",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8023-91ca-f0e3d730dfd5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "@notionpresso/cli",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "@notionpresso/cli",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ": CLI tool for extracting Notion data",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ": CLI tool for extracting Notion data",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-809e-9f93-f2269e54ca7b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "@notionpresso/svelte",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "@notionpresso/svelte",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ": Svelte rendering library (currently migrating to Svelte 5)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ": Svelte rendering library (currently migrating to Svelte 5)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8067-ae4c-d4d225b60f23",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Documentation site",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Documentation site",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-807e-8624-e2daf8f1399a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "How to Contribute",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "How to Contribute",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-806b-a7db-ed1f48a220dc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Development Environment Setup",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Development Environment Setup",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-80a3-a438-f3f239229579",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Fork and clone the repository you want to work on:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Fork and clone the repository you want to work on:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8098-bb79-e3604b66c730",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "code",
+      "code": {
+        "caption": [],
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "git clone <https://github.com/notionpresso/[package-name].git>\ncd [package-name]\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "git clone <https://github.com/notionpresso/[package-name].git>\ncd [package-name]\n",
+            "href": null
+          }
+        ],
+        "language": "shell"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-806d-8933-c79d5ad7f5f8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Install dependencies:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Install dependencies:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8086-8f8c-e72645179cc9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "code",
+      "code": {
+        "caption": [],
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "npm install\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "npm install\n",
+            "href": null
+          }
+        ],
+        "language": "shell"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8002-8223-e19a83c36adf",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Create a new branch:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Create a new branch:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-80fe-ad9b-f2672d83edd7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "code",
+      "code": {
+        "caption": [],
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "git checkout -b feature/your-feature-name\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "git checkout -b feature/your-feature-name\n",
+            "href": null
+          }
+        ],
+        "language": "shell"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-80e5-9b9c-f743040ae7ff",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Development Guidelines",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Development Guidelines",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-802e-9330-cd07ee24279f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Code Style",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Code Style",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-807b-acea-f0a791643c43",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Use 2 spaces for indentation",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Use 2 spaces for indentation",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-803e-a7c7-e7cb4c02771d",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Declare TypeScript types explicitly",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Declare TypeScript types explicitly",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-80ef-add1-e6d1ee6d6cda",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Follow conventional commits format for commit messages",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Follow conventional commits format for commit messages",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8097-a123-cee661230389",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Component Development",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Component Development",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-80b1-bf5d-eee6c1bd2ef4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "When adding new components, follow this structure:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "When adding new components, follow this structure:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8054-937e-d5ece8a37edc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "code",
+      "code": {
+        "caption": [],
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "import React from 'react'\nimport type { ComponentType } from 'react'\n\ninterface BlockProps {\n  content: string\n  style?: React.CSSProperties\n}\n\nconst Block: ComponentType<BlockProps> = ({ content, style }) => {\n  return (\n    <div style={style}>\n      {content}\n    </div>\n  )\n}\n\nexport default Block\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "import React from 'react'\nimport type { ComponentType } from 'react'\n\ninterface BlockProps {\n  content: string\n  style?: React.CSSProperties\n}\n\nconst Block: ComponentType<BlockProps> = ({ content, style }) => {\n  return (\n    <div style={style}>\n      {content}\n    </div>\n  )\n}\n\nexport default Block\n",
+            "href": null
+          }
+        ],
+        "language": "typescript"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8063-bc2a-c46182b09cb1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Documentation Contributions",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Documentation Contributions",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-808c-ad25-f06b39090850",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "When improving documentation, please ensure:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "When improving documentation, please ensure:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8060-9984-f13c861ce8ce",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Code block indentation is properly applied",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Code block indentation is properly applied",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-80ff-a096-d4b914013385",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Package names reference the latest versions (@notionpresso/*)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Package names reference the latest versions (@notionpresso/*)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8071-b227-f514d761c89a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Documentation consistency is maintained",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Documentation consistency is maintained",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8082-a33f-d73f4cec3712",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Multi-language translations are provided where possible (Chinese, Japanese, etc.)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Multi-language translations are provided where possible (Chinese, Japanese, etc.)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8023-b28c-ce517ec58062",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Example:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Example:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-80b4-85ab-cde9eef4a8a7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "code",
+      "code": {
+        "caption": [],
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "# Component Usage Guide\n\nYou can use @notionpresso/react components as follows:\n\n```typescript\nimport { NotionRenderer } from '@notionpresso/react' // remove react-notion-custom\n\nconst BlogPost = ({ content }) => {\n  return (\n    <NotionRenderer content={content} />\n  )\n}\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "# Component Usage Guide\n\nYou can use @notionpresso/react components as follows:\n\n```typescript\nimport { NotionRenderer } from '@notionpresso/react' // remove react-notion-custom\n\nconst BlogPost = ({ content }) => {\n  return (\n    <NotionRenderer content={content} />\n  )\n}\n",
+            "href": null
+          }
+        ],
+        "language": "markdown"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-80d1-bf36-e65671ea67e8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8017-9202-fdf73b9f1c9c"
+      },
+      "created_time": "2024-10-31T06:23:00.000Z",
+      "last_edited_time": "2024-10-31T06:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "code",
+      "code": {
+        "caption": [],
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "\nThank you for contributing! Your participation helps make NotionPresso better. 🙏\n\nWe especially welcome active participation from those interested in addressing our urgent improvement areas (indentation, legacy references, multi-language support).\n\n---\n\n이 프로젝트는 MIT 라이선스를 따릅니다 (This project is licensed under the MIT License).",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "\nThank you for contributing! Your participation helps make NotionPresso better. 🙏\n\nWe especially welcome active participation from those interested in addressing our urgent improvement areas (indentation, legacy references, multi-language support).\n\n---\n\n이 프로젝트는 MIT 라이선스를 따릅니다 (This project is licensed under the MIT License).",
+            "href": null
+          }
+        ],
+        "language": "plain text"
+      },
+      "blocks": []
+    }
+  ]
+}
