@@ -1,6 +1,6 @@
 import Link from "next/link";
-import ThemeToggle from "./theme-toggle";
 import { ChevronRightIcon } from "@heroicons/react/24/solid";
+import ThemeSelector from "../ui/theme-selector";
 
 type Document = {
   title: string;
@@ -34,35 +34,33 @@ export default function Sidebar({
   );
 
   return (
-    <nav className="w-64 sticky top-5 h-fit p-4 rounded-md border-2 dark:border-white border-white flex flex-col gap-2">
-      <div>
-        {Object.entries(groupedDocuments).map(([group, docs]) => (
-          <div key={group}>
-            <h3 className="text-white mb-1 text-xl dark:text-gray-500">
-              {group}
-            </h3>
-            <ul className="ml-0.5">
-              {docs.map((doc) => (
-                <li key={doc.slug} className="mb-1">
-                  <Link
-                    href={`/${lang}/docs/${doc.group}/${doc.slug}`}
-                    className={`flex justify-center items-center gap-1 cursor-pointer p-2 rounded ${
-                      currentSlug === doc.slug && currentGroup === doc.group
-                        ? "bg-gray-900 text-white"
-                        : "hover:bg-gray-900 hover:text-white dark:hover:bg-gray-900 dark:hover:text-white dark:text-gray-500"
-                    }`}
-                  >
-                    <p className="flex-1 text-white">{doc.title}</p>
-                    <ChevronRightIcon className="h-4 w-4 inline-block" />
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
+    <nav className="w-64 sticky top-5 h-fit p-4 rounded-md border-2 dark:border-white border-black flex flex-col gap-2">
+      {Object.entries(groupedDocuments).map(([group, docs]) => (
+        <div key={group}>
+          <h3 className="text-black mb-1 text-xl dark:text-gray-500">
+            {group}
+          </h3>
+          <ul className="ml-0.5">
+            {docs.map((doc) => (
+              <li key={doc.slug} className="mb-1">
+                <Link
+                  href={`/${lang}/docs/${doc.group}/${doc.slug}`}
+                  className={`flex justify-center items-center gap-1 cursor-pointer p-2 rounded ${
+                    currentSlug === doc.slug && currentGroup === doc.group
+                      ? "bg-gray-900 text-white"
+                      : "hover:bg-gray-900 hover:text-white dark:hover:bg-gray-900 dark:hover:text-white dark:text-gray-500"
+                  }`}
+                >
+                  <p className="flex-1">{doc.title}</p>
+                  <ChevronRightIcon className="h-4 w-4 inline-block" />
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
 
-      <ThemeToggle />
+      <ThemeSelector />
     </nav>
   );
 }

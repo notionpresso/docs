@@ -15,6 +15,7 @@
     "@heroicons/react": "2.1.5",
     "@notionpresso/react": "^0.0.5",
     "@types/hast": "3.0.4",
+    "clsx": "2.1.1",
     "gray-matter": "4.0.3",
     "highlight.js": "^11.10.0",
     "next": "14.2.11",
@@ -27,7 +28,8 @@
     "rehype-raw": "7.0.0",
     "remark": "15.0.1",
     "remark-gfm": "4.0.0",
-    "remark-html": "16.0.1"
+    "remark-html": "16.0.1",
+    "tailwind-merge": "2.5.4"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.15",
