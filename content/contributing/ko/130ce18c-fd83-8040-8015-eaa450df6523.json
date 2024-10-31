@@ -1,0 +1,2337 @@
+{
+  "object": "page",
+  "id": "130ce18c-fd83-8040-8015-eaa450df6523",
+  "created_time": "2024-10-31T06:20:00.000Z",
+  "last_edited_time": "2024-10-31T06:22:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+  },
+  "cover": null,
+  "icon": null,
+  "parent": {
+    "type": "database_id",
+    "database_id": "130ce18c-fd83-8094-8989-d879a60eeb80"
+  },
+  "archived": false,
+  "in_trash": false,
+  "properties": {
+    "태그": {
+      "id": "%3ESk%5E",
+      "type": "select",
+      "select": {
+        "id": "lYz=",
+        "name": "ko",
+        "color": "blue"
+      }
+    },
+    "title": {
+      "id": "title",
+      "type": "title",
+      "title": [
+        {
+          "type": "text",
+          "text": {
+            "content": "NotionPresso 기여 가이드 📚",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "NotionPresso 기여 가이드 📚",
+          "href": null
+        }
+      ]
+    }
+  },
+  "url": "https://www.notion.so/NotionPresso-130ce18cfd8380408015eaa450df6523",
+  "public_url": null,
+  "request_id": "81e7404d-ec3a-431c-851d-c2b3aa8b7394",
+  "blocks": [
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-805f-8d2c-ff4f18ebfcdc",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "🚨 긴급 개선이 필요한 영역",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "🚨 긴급 개선이 필요한 영역",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8019-a22c-ce819d3f8da1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "현재 NotionPresso 프로젝트에는 다음과 같은 긴급한 개선이 필요한 영역들이 있습니다:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "현재 NotionPresso 프로젝트에는 다음과 같은 긴급한 개선이 필요한 영역들이 있습니다:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-801e-af43-c742d0fbe6f0",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1. 문서 코드 블록 인덴트 문제",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "1. 문서 코드 블록 인덴트 문제",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-80eb-b912-d14836d6499b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "현재 문서의 코드 블록에서 인덴테이션이 제대로 적용되지 않는 문제가 있습니다. 예를 들어:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "현재 문서의 코드 블록에서 인덴테이션이 제대로 적용되지 않는 문제가 있습니다. 예를 들어:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-80a1-9d57-c546af992997",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "문제가 있는 코드:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "문제가 있는 코드:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-804e-bf0e-d5849dd6ac58",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "code",
+      "code": {
+        "caption": [],
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "function example() {\nconst value = 'test'\nreturn {\ndata: value\n}\n}\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "function example() {\nconst value = 'test'\nreturn {\ndata: value\n}\n}\n",
+            "href": null
+          }
+        ],
+        "language": "typescript"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-806c-b944-e9f50cf47432",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "올바른 코드:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "올바른 코드:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8023-8d9a-fc1a4fa1948c",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "code",
+      "code": {
+        "caption": [],
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "function example() {\n  const value = 'test'\n  return {\n    data: value\n  }\n}\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "function example() {\n  const value = 'test'\n  return {\n    data: value\n  }\n}\n",
+            "href": null
+          }
+        ],
+        "language": "typescript"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-806f-a5c1-fad962153ac9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "2. 패키지 이름 레거시 참조 업데이트",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "2. 패키지 이름 레거시 참조 업데이트",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-80ff-adb9-e97c37e1f18f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "프로젝트 전반에 걸쳐 이전 패키지 이름이 여전히 사용되고 있습니다:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "프로젝트 전반에 걸쳐 이전 패키지 이름이 여전히 사용되고 있습니다:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8003-92cc-f7951644b188",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "react-notion-custom",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "react-notion-custom",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " → ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " → ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "@notionpresso/react",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "@notionpresso/react",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8000-8bd0-c39e258b0795",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "notion-dump",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "notion-dump",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " → ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " → ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "@notionpresso/cli",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "@notionpresso/cli",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-804b-95b2-fb8a7b9cb1a8",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "이러한 레거시 참조들을 찾아 새로운 패키지 이름으로 업데이트해야 합니다.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "이러한 레거시 참조들을 찾아 새로운 패키지 이름으로 업데이트해야 합니다.",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8022-b8af-e780d6fed07e",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "3. 다국어 문서화 필요",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "3. 다국어 문서화 필요",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8060-a29b-f4c014aa1138",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "현재 문서는 영어와 한국어만 제공되고 있습니다. 더 많은 개발자들이 참여할 수 있도록 다양한 언어로의 번역이 필요합니다.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "현재 문서는 영어와 한국어만 제공되고 있습니다. 더 많은 개발자들이 참여할 수 있도록 다양한 언어로의 번역이 필요합니다.",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8086-a993-f90772cde424",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "quote",
+      "quote": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "위 문제들을 해결하는데 도움을 주실 수 있는 개발자분들의 참여를 기다립니다! 🙏",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "위 문제들을 해결하는데 도움을 주실 수 있는 개발자분들의 참여를 기다립니다! 🙏",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-808d-b25b-d412bde1aea3",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "divider",
+      "divider": {},
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8031-99cd-c0638699d01f",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "프로젝트 소개",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "프로젝트 소개",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-80f6-887c-c1a60e8b8415",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "NotionPresso는 Notion을 CMS로 활용하여 개인 블로그를 만들 수 있게 해주는 오픈소스 프로젝트입니다. 다음과 같은 패키지들로 구성되어 있습니다:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "NotionPresso는 Notion을 CMS로 활용하여 개인 블로그를 만들 수 있게 해주는 오픈소스 프로젝트입니다. 다음과 같은 패키지들로 구성되어 있습니다:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-80df-a7ae-fb45c476ddb6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "@notionpresso/react",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "@notionpresso/react",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ": Notion 컨텐츠를 위한 React 렌더링 라이브러리",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ": Notion 컨텐츠를 위한 React 렌더링 라이브러리",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8071-a16f-d8d1564b1931",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "@notionpresso/cli",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "@notionpresso/cli",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ": Notion 데이터 추출을 위한 CLI 도구",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ": Notion 데이터 추출을 위한 CLI 도구",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-806d-ae72-e7200615ab21",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "@notionpresso/svelte",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": true,
+              "color": "default"
+            },
+            "plain_text": "@notionpresso/svelte",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ": Svelte 렌더링 라이브러리 (현재 Svelte 5로 마이그레이션 중)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ": Svelte 렌더링 라이브러리 (현재 Svelte 5로 마이그레이션 중)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8060-8897-cf05d8af0bf6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Documentation site",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Documentation site",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-80aa-830c-ee13740e2298",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "기여 방법",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "기여 방법",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8051-97f4-c25fab877df4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "개발 환경 설정",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "개발 환경 설정",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-80b8-a166-c7abaeb74aa6",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "작업하고자 하는 저장소를 포크하고 클론합니다:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "작업하고자 하는 저장소를 포크하고 클론합니다:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8096-8a46-feef212f7b80",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "code",
+      "code": {
+        "caption": [],
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "git clone <https://github.com/notionpresso/[package-name].git>\ncd [package-name]\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "git clone <https://github.com/notionpresso/[package-name].git>\ncd [package-name]\n",
+            "href": null
+          }
+        ],
+        "language": "shell"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-80aa-953a-e658a02302d7",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "의존성을 설치합니다:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "의존성을 설치합니다:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-80d1-985d-ffd76e84ceed",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "code",
+      "code": {
+        "caption": [],
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "npm install\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "npm install\n",
+            "href": null
+          }
+        ],
+        "language": "shell"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8032-88c3-f37a057c5da5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "새 브랜치를 생성합니다:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "새 브랜치를 생성합니다:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8069-aaaf-fa8896a80212",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "code",
+      "code": {
+        "caption": [],
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "git checkout -b feature/your-feature-name\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "git checkout -b feature/your-feature-name\n",
+            "href": null
+          }
+        ],
+        "language": "shell"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8052-ad50-f06967fc1c6b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "개발 가이드라인",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "개발 가이드라인",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8026-b0be-e06ffb9078fe",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "코드 스타일",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "코드 스타일",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-808c-9303-e098b71751ee",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "들여쓰기는 2칸 공백을 사용합니다",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "들여쓰기는 2칸 공백을 사용합니다",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-807d-ab92-c8db7791ebe5",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "TypeScript 타입은 명시적으로 선언합니다",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "TypeScript 타입은 명시적으로 선언합니다",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-80f4-80c7-d692ad09dba9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "커밋 메시지는 conventional commits 형식을 따릅니다",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "커밋 메시지는 conventional commits 형식을 따릅니다",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-807c-b946-d03cead24ddf",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "컴포넌트 개발",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "컴포넌트 개발",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-80e8-a96b-e38e10cbe3ed",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "새로운 컴포넌트를 추가할 때는 다음 구조를 따릅니다:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "새로운 컴포넌트를 추가할 때는 다음 구조를 따릅니다:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-801f-a63d-c0f0869db307",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "code",
+      "code": {
+        "caption": [],
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "import React from 'react'\nimport type { ComponentType } from 'react'\n\ninterface BlockProps {\n  content: string\n  style?: React.CSSProperties\n}\n\nconst Block: ComponentType<BlockProps> = ({ content, style }) => {\n  return (\n    <div style={style}>\n      {content}\n    </div>\n  )\n}\n\nexport default Block\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "import React from 'react'\nimport type { ComponentType } from 'react'\n\ninterface BlockProps {\n  content: string\n  style?: React.CSSProperties\n}\n\nconst Block: ComponentType<BlockProps> = ({ content, style }) => {\n  return (\n    <div style={style}>\n      {content}\n    </div>\n  )\n}\n\nexport default Block\n",
+            "href": null
+          }
+        ],
+        "language": "typescript"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-809b-a4d2-db3c0bd129cf",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "문서화 기여",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "문서화 기여",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-80e3-810a-f54a3ec774ec",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "문서 개선 시 다음 사항을 확인해주세요:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "문서 개선 시 다음 사항을 확인해주세요:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8012-8e94-f262b6e2c116",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "코드 블록의 인덴테이션이 올바르게 적용되었는지 확인",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "코드 블록의 인덴테이션이 올바르게 적용되었는지 확인",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8004-aa68-d155c32d96b1",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "패키지 이름이 최신 버전(@notionpresso/*)으로 참조되었는지 확인",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "패키지 이름이 최신 버전(@notionpresso/*)으로 참조되었는지 확인",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8003-b05d-ff79a41db7cf",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "문서의 일관성 유지",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "문서의 일관성 유지",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8039-ad34-e54d4298e125",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:22:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "가능한 경우 다국어 번역 제공 (중국어, 일본어 등등)",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "가능한 경우 다국어 번역 제공 (중국어, 일본어 등등)",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-80ab-8dd2-ccae96ec5960",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "예시:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "예시:",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8090-8ffb-ed4d3f8bbceb",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:20:00.000Z",
+      "last_edited_time": "2024-10-31T06:21:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "code",
+      "code": {
+        "caption": [],
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "# 컴포넌트 사용 가이드\n\n다음과 같이 @notionpresso/react의 컴포넌트를 사용할 수 있습니다:\n\n```typescript\nimport { NotionRenderer } from '@notionpresso/react' // react-notion-custom 제거\n\nconst BlogPost = ({ content }) => {\n  return (\n    <NotionRenderer content={content} />\n  )\n}\n```\n",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "# 컴포넌트 사용 가이드\n\n다음과 같이 @notionpresso/react의 컴포넌트를 사용할 수 있습니다:\n\n```typescript\nimport { NotionRenderer } from '@notionpresso/react' // react-notion-custom 제거\n\nconst BlogPost = ({ content }) => {\n  return (\n    <NotionRenderer content={content} />\n  )\n}\n```\n",
+            "href": null
+          }
+        ],
+        "language": "markdown"
+      },
+      "blocks": []
+    },
+    {
+      "object": "block",
+      "id": "130ce18c-fd83-8023-a150-e733d48af93b",
+      "parent": {
+        "type": "page_id",
+        "page_id": "130ce18c-fd83-8040-8015-eaa450df6523"
+      },
+      "created_time": "2024-10-31T06:21:00.000Z",
+      "last_edited_time": "2024-10-31T06:21:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "95fc0174-8fc6-4114-8e45-f67eacd99f07"
+      },
+      "has_children": false,
+      "archived": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "기여해주셔서 감사합니다! 여러분의 참여로 NotionPresso가 더욱 발전할 수 있습니다. 🙏\n\n특히 현재 시급한 개선이 필요한 부분들(인덴테이션, 레거시 참조, 다국어 지원)에 관심 있으신 분들의 적극적인 참여를 기다립니다.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "기여해주셔서 감사합니다! 여러분의 참여로 NotionPresso가 더욱 발전할 수 있습니다. 🙏\n\n특히 현재 시급한 개선이 필요한 부분들(인덴테이션, 레거시 참조, 다국어 지원)에 관심 있으신 분들의 적극적인 참여를 기다립니다.",
+            "href": null
+          }
+        ],
+        "color": "default"
+      },
+      "blocks": []
+    }
+  ]
+}
