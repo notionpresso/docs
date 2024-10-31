@@ -1,5 +1,4 @@
 export { default as Sidebar } from "./sidebar";
-export { default as ThemeToggle } from "./theme-toggle";
 export { default as TOC } from "./toc";
 export { default as DynamicLayout } from "./dynamic-layout";
 export { default as MobileSidebar } from "./mobile-sidebar";

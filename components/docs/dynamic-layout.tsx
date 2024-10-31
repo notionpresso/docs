@@ -19,7 +19,7 @@ export default function DynamicLayout({
 
   return (
     <div
-      className={`flex relative flex-col w-full justify-center gap-5 md:flex-row bg-primary ${isMobile ? "p-4" : "p-5"}`}
+      className={`flex relative flex-col w-full justify-center gap-5 md:flex-row bg-white dark:bg-black ${isMobile ? "p-4" : "p-5"}`}
     >
       <div>{isMobile ? mobileSidebar : sidebar}</div>
       <div className="max-w-[720px]">{children}</div>

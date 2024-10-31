@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navigation from "@/components/navigation";
+import Header from "@/components/ui/header";
 
 const pretendard = localFont({
   src: "./fonts/Pretendard-Regular.woff",
@@ -53,7 +54,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${pretendard.variable} font-sans`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Navigation />
+          <Header />
           <main className="dark:bg-black">{children}</main>
         </ThemeProvider>
       </body>
