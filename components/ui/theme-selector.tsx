@@ -9,6 +9,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
+import useClickOutside from "@/hooks/useClickOutside";
 
 interface ThemeSelectorProps {
   variant?: "black" | "orange";
@@ -32,19 +33,10 @@ export function ThemeSelector({ variant = "black" }: ThemeSelectorProps) {
     setMounted(true);
   }, []);
 
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        containerRef.current &&
-        !containerRef.current.contains(event.target as Node)
-      ) {
-        setIsOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+  useClickOutside({
+    ref: containerRef,
+    handler: () => setIsOpen(false),
+  });
 
   if (!mounted) {
     return null;

@@ -5,6 +5,7 @@ import { LanguageIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import { useRouter, usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { LANGUAGELIST } from "@/constants/constants";
+import useClickOutside from "@/hooks/useClickOutside";
 
 interface LanguageSelectorProps {
   variant?: "white" | "orange";
@@ -23,19 +24,10 @@ export function LanguageSelector({ variant = "white" }: LanguageSelectorProps) {
     setCurrentLang(lang);
   }, [pathname]);
 
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        containerRef.current &&
-        !containerRef.current.contains(event.target as Node)
-      ) {
-        setIsOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+  useClickOutside({
+    ref: containerRef,
+    handler: () => setIsOpen(false),
+  });
 
   const changeLanguage = (newLang: string) => {
     const newPathname = pathname.replace(`/${currentLang}`, `/${newLang}`);
