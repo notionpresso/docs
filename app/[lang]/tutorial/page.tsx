@@ -6,8 +6,13 @@ export async function generateStaticParams() {
   return [{ lang: "ko" }, { lang: "en" }];
 }
 
-export default function TutorialPage({ params }: { params: { lang: string } }) {
-  const content = params.lang === "ko" ? kr : en;
+export default async function TutorialPage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  const content = lang === "ko" ? kr : en;
   const title = content.properties.title.title[0].plain_text;
 
   return (

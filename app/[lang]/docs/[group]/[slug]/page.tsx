@@ -3,11 +3,11 @@ import { getAllDocuments, getDocumentBySlug } from "@/lib/mdx";
 import { Metadata } from "next";
 
 interface GuidePageProps {
-  params: {
+  params: Promise<{
     lang: string;
     group: string;
     slug: string;
-  };
+  }>;
 }
 
 // Since we're using `fs` during build time, we should avoid the Edge runtime
@@ -16,7 +16,7 @@ interface GuidePageProps {
 // Generate static params at build time
 export async function generateStaticParams() {
   const supportedLanguages = ["en", "ko"];
-  const params: GuidePageProps["params"][] = [];
+  const params: Awaited<GuidePageProps["params"]>[] = [];
 
   for (const lang of supportedLanguages) {
     const allDocuments = getAllDocuments(lang);
@@ -36,7 +36,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: GuidePageProps): Promise<Metadata> {
-  const { lang, group, slug } = params;
+  const { lang, group, slug } = await params;
   const allDocuments = getAllDocuments(lang);
   const document = getDocumentBySlug(lang, group, slug, allDocuments);
 
@@ -55,7 +55,7 @@ export async function generateMetadata({
 }
 
 export default async function Page({ params }: GuidePageProps) {
-  const { lang, group, slug } = params;
+  const { lang, group, slug } = await params;
 
   // Fetch data during the rendering of the page
   const allDocuments = getAllDocuments(lang);
@@ -68,7 +68,7 @@ export default async function Page({ params }: GuidePageProps) {
 
   return (
     <DocsLayout
-      params={params}
+      params={await params}
       content={content}
       title={title}
       prevDocument={prevDocument}
