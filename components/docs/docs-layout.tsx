@@ -27,7 +27,7 @@ interface GuidePageProps {
   allDocuments: any[];
 }
 
-export default function GuidePage({
+export default function DocsLayout({
   params,
   content,
   title,

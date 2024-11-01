@@ -1,6 +1,4 @@
-"use client";
-
-import useIsMobile from "@/hooks/useIsMobile";
+import { cn } from "@/lib/utils";
 
 interface DynamicLayoutProps {
   sidebar: React.ReactNode;
@@ -15,15 +13,23 @@ export default function DynamicLayout({
   mobileSidebar,
   children,
 }: DynamicLayoutProps) {
-  const isMobile = useIsMobile();
-
   return (
     <div
-      className={`flex relative flex-col w-full justify-center gap-5 md:flex-row bg-white dark:bg-black ${isMobile ? "p-4" : "p-5"}`}
+      className={cn(
+        "flex relative flex-col w-full justify-center gap-5 md:flex-row bg-white dark:bg-black p-4 md:p-5",
+      )}
     >
-      <div>{isMobile ? mobileSidebar : sidebar}</div>
-      <div className="max-w-[720px]">{children}</div>
-      {!isMobile && <div>{toc}</div>}
+      {/* Sidebar for desktop */}
+      <div className={cn("hidden md:block")}>{sidebar}</div>
+
+      {/* Mobile sidebar */}
+      <div className={cn("block md:hidden")}>{mobileSidebar}</div>
+
+      {/* Main content */}
+      <div className={cn("max-w-[720px]")}>{children}</div>
+
+      {/* TOC - only visible on desktop */}
+      <div className={cn("hidden md:block")}>{toc}</div>
     </div>
   );
 }

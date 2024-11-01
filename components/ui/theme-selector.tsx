@@ -33,12 +33,23 @@ export function ThemeSelector({ variant = "black" }: ThemeSelectorProps) {
     setMounted(true);
   }, []);
 
-  if (!mounted) {
-    return null;
-  }
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        containerRef.current &&
+        !containerRef.current.contains(event.target as Node)
+      ) {
+        setIsOpen(false);
+      }
+    };
 
-  const CurrentThemeIcon =
-    THEMELIST.find((t) => t.value === theme)?.icon || SunIcon;
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const CurrentThemeIcon = mounted
+    ? (THEMELIST.find((t) => t.value === theme)?.icon ?? SunIcon)
+    : SunIcon;
 
   return (
     <div ref={containerRef} className="relative inline-block">
@@ -48,9 +59,10 @@ export function ThemeSelector({ variant = "black" }: ThemeSelectorProps) {
           "inline-flex items-center justify-center gap-1 rounded-lg p-2",
           variant === "black" && "text-black dark:text-white",
           variant === "orange" && "text-primary-400",
+          !mounted && "animate-pulse",
         )}
       >
-        <CurrentThemeIcon className="h-5 w-5" />
+        <CurrentThemeIcon className={cn("h-5 w-5")} />
         <ChevronDownIcon
           className={cn(
             "h-5 w-5 transition-transform duration-200",
@@ -59,7 +71,7 @@ export function ThemeSelector({ variant = "black" }: ThemeSelectorProps) {
         />
       </button>
 
-      {isOpen && (
+      {mounted && isOpen && (
         <div
           ref={popoverRef}
           className={cn(
