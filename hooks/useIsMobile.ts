@@ -1,14 +1,15 @@
 "use client";
-
-import isMobile from "@/lib/is-mobile";
 import { useState, useEffect } from "react";
-
+import { useCookies } from "next-client-cookies";
 const useIsMobile = () => {
-  const [mobile, setMobile] = useState(isMobile());
+  const cookies = useCookies();
+  const [mobile, setMobile] = useState(() => {
+    return cookies.get("viewport") === "mobile";
+  });
 
   useEffect(() => {
     const checkIsMobile = () => {
-      setMobile(isMobile());
+      setMobile(window.innerWidth < 768);
     };
 
     checkIsMobile();

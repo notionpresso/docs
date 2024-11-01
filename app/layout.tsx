@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/ui/header";
+import { CookiesProvider } from "next-client-cookies/server";
 
 const pretendard = localFont({
   src: "./fonts/Pretendard-Regular.woff",
@@ -63,10 +64,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${pretendard.variable} font-sans`}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Header />
-          <main className="dark:bg-black">{children}</main>
-        </ThemeProvider>
+        <CookiesProvider>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <Header />
+            <main className="dark:bg-black">{children}</main>
+          </ThemeProvider>
+        </CookiesProvider>
       </body>
     </html>
   );
