@@ -1,31 +1,16 @@
-import { staticGenerationAsyncStorage } from "next/dist/client/components/static-generation-async-storage.external";
-
-function getSearchString(): string {
-  const store = staticGenerationAsyncStorage.getStore();
-  const pathname = store?.urlPathname;
-
-  if (!pathname) return "";
-
-  const queryIndex = pathname.indexOf("?");
-  if (queryIndex === -1) return "";
-
-  return pathname.substring(queryIndex);
-}
+import { getCookie, getCookies } from "cookies-next";
+import { ServerInsertedHtml } from "next/dist/server/future/route-modules/app-page/vendored/contexts/entrypoints";
+import { ServerInsertedHTMLContext } from "next/navigation";
+import type { ServerInsertedHTMLHook } from "next/dist/shared/lib/server-inserted-html.shared-runtime";
 
 function isMobile() {
   if (typeof window !== "undefined") {
     return window.innerWidth < 768;
   }
+  const a = ServerInsertedHtml as any;
+  console.log(a.ServerInsertedHTMLContext._currentValue);
 
-  const store = staticGenerationAsyncStorage.getStore();
-  if (!store) {
-    throw new Error("isMobile is not available in server-side rendering");
-  }
-
-  const searchParams = new URLSearchParams(getSearchString());
-  const viewport = searchParams.get("viewport");
-
-  return viewport === "mobile";
+  return true;
 }
 
 export default isMobile;

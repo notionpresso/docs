@@ -4,9 +4,12 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import { useRouter } from "next/navigation";
+import useIsMobile from "@/hooks/useIsMobile";
 
 export function LandingHero() {
   const router = useRouter();
+  const isMobile = useIsMobile();
+  console.log("mobile", isMobile);
 
   return (
     <section
