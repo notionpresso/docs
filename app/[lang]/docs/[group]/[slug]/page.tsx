@@ -1,7 +1,6 @@
-// app/[lang]/guide/[group]/[slug]/page.tsx
+import { DocsLayout } from "@/components/docs";
 import { getAllDocuments, getDocumentBySlug } from "@/lib/mdx";
 import { Metadata } from "next";
-import GuidePage from "@/components/docs/guide-page";
 
 interface GuidePageProps {
   params: {
@@ -68,7 +67,7 @@ export default async function Page({ params }: GuidePageProps) {
   );
 
   return (
-    <GuidePage
+    <DocsLayout
       params={params}
       content={content}
       title={title}
