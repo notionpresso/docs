@@ -2,7 +2,7 @@ import { NotionRenderer } from "@/components/notion-renderer";
 import * as kr from "@/content/contributing/ko/130ce18c-fd83-8040-8015-eaa450df6523.json";
 import * as en from "@/content/contributing/en/130ce18c-fd83-8017-9202-fdf73b9f1c9c.json";
 
-export const runtime = "edge";
+export const runtime = "nodejs";
 export async function generateStaticParams() {
   return [{ lang: "ko" }, { lang: "en" }];
 }
