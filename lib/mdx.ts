@@ -67,7 +67,7 @@ export function getDocumentBySlug(
   slug: string,
   allDocuments: Document[],
 ): DocumentData {
-  const notFoundDocument: DocumentData = {
+  const NOT_FOUND_DOCUMENT: DocumentData = {
     slug: "",
     content: "<p>Document not found</p>",
     title: "Not Found",
@@ -77,7 +77,7 @@ export function getDocumentBySlug(
   };
 
   if (!lang || !group || !slug) {
-    return notFoundDocument;
+    return NOT_FOUND_DOCUMENT;
   }
 
   // Filter documents in the same group and sort them if necessary
@@ -86,16 +86,32 @@ export function getDocumentBySlug(
   const currentIndex = documentsInGroup.findIndex((doc) => doc.slug === slug);
 
   if (currentIndex === -1) {
-    return notFoundDocument;
+    return NOT_FOUND_DOCUMENT;
   }
 
   const document = documentsInGroup[currentIndex];
-  const prevDocument =
+
+  let prevDocument =
     currentIndex > 0 ? documentsInGroup[currentIndex - 1] : null;
-  const nextDocument =
+  let nextDocument =
     currentIndex < documentsInGroup.length - 1
       ? documentsInGroup[currentIndex + 1]
       : null;
+
+  const allGroups = Array.from(new Set(allDocuments.map((doc) => doc.group)));
+  const currentGroupIndex = allGroups.indexOf(group);
+
+  if (!prevDocument && currentGroupIndex > 0) {
+    const prevGroup = allGroups[currentGroupIndex - 1];
+    const prevGroupDocs = allDocuments.filter((doc) => doc.group === prevGroup);
+    prevDocument = prevGroupDocs[prevGroupDocs.length - 1];
+  }
+
+  if (!nextDocument && currentGroupIndex < allGroups.length - 1) {
+    const nextGroup = allGroups[currentGroupIndex + 1];
+    const nextGroupDocs = allDocuments.filter((doc) => doc.group === nextGroup);
+    nextDocument = nextGroupDocs[0];
+  }
 
   return {
     ...document,
