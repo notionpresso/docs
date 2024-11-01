@@ -14,7 +14,7 @@ export function LandingHero() {
         "relative overflow-hidden",
         "bg-primary-500 dark:bg-black",
         "flex items-center",
-        "h-[calc(100vh-80px)]",
+        "h-[calc(100dvh-72px)] sm:h-[calc(100dvh-80px)]",
       )}
     >
       <div className={cn("container mx-auto px-4")}>
@@ -30,7 +30,7 @@ export function LandingHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className={cn("text-display text-center mb-8")}>
+            <h1 className={cn("text-h2 sm:text-display text-center mb-8")}>
               Just a cup of coffee
               <br />
               with NotionPresso
