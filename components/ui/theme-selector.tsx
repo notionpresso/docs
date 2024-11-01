@@ -24,19 +24,14 @@ const THEMELIST = [
 export function ThemeSelector({ variant = "black" }: ThemeSelectorProps) {
   const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const containerRef = useRef<HTMLDivElement>(null);
   const popoverRef = useRef<HTMLDivElement>(null);
+  const containerRef = useClickOutside(() => setIsOpen(false));
 
   const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
   }, []);
-
-  useClickOutside({
-    ref: containerRef,
-    handler: () => setIsOpen(false),
-  });
 
   if (!mounted) {
     return null;

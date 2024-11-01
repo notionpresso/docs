@@ -1,11 +1,10 @@
-import { useEffect, RefObject } from "react";
+import { useEffect, useRef } from "react";
 
-interface UseClickOutsideProps {
-  ref: RefObject<HTMLElement>;
-  handler: () => void;
-}
+export function useClickOutside<T extends HTMLElement = HTMLDivElement>(
+  handler: () => void,
+) {
+  const ref = useRef<T>(null);
 
-export function useClickOutside({ ref, handler }: UseClickOutsideProps) {
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (ref.current && !ref.current.contains(event.target as Node)) {
@@ -15,7 +14,9 @@ export function useClickOutside({ ref, handler }: UseClickOutsideProps) {
 
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, [ref, handler]);
+  }, [handler]);
+
+  return ref;
 }
 
 export default useClickOutside;

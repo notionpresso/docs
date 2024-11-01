@@ -16,18 +16,13 @@ export function LanguageSelector({ variant = "white" }: LanguageSelectorProps) {
   const pathname = usePathname();
   const [currentLang, setCurrentLang] = useState("en");
   const [isOpen, setIsOpen] = useState(false);
-  const containerRef = useRef<HTMLDivElement>(null);
   const popoverRef = useRef<HTMLDivElement>(null);
+  const containerRef = useClickOutside(() => setIsOpen(false));
 
   useEffect(() => {
     const lang = pathname.split("/")[1];
     setCurrentLang(lang);
   }, [pathname]);
-
-  useClickOutside({
-    ref: containerRef,
-    handler: () => setIsOpen(false),
-  });
 
   const changeLanguage = (newLang: string) => {
     const newPathname = pathname.replace(`/${currentLang}`, `/${newLang}`);
