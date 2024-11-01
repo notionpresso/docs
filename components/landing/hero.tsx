@@ -11,14 +11,16 @@ export function LandingHero() {
   return (
     <section
       className={cn(
-        "relative min-h-screen overflow-hidden",
+        "relative overflow-hidden",
         "bg-primary-500 dark:bg-black",
+        "flex items-center",
+        "h-[calc(100vh-80px)]",
       )}
     >
       <div className={cn("container mx-auto px-4")}>
         <div
           className={cn(
-            "flex flex-col items-center justify-center min-h-screen",
+            "flex flex-col items-center justify-center",
             "text-white dark:text-primary-400",
           )}
         >
