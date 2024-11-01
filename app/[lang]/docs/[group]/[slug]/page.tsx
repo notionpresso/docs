@@ -68,7 +68,7 @@ export default async function Page({ params }: GuidePageProps) {
 
   return (
     <DocsLayout
-      params={await params}
+      params={{ lang, group, slug }}
       content={content}
       title={title}
       prevDocument={prevDocument}
