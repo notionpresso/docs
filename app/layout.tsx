@@ -1,14 +1,5 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
-import Header from "@/components/ui/header";
-
-const pretendard = localFont({
-  src: "./fonts/Pretendard-Regular.woff",
-  variable: "--font-pretendard",
-  weight: "100 900",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://notionpresso.com"),
@@ -60,14 +51,5 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${pretendard.variable} font-sans`}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Header />
-          <main className="dark:bg-black">{children}</main>
-        </ThemeProvider>
-      </body>
-    </html>
-  );
+  return <>{children}</>;
 }
