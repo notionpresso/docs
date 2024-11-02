@@ -9,6 +9,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
+import useClickOutside from "@/hooks/useClickOutside";
 
 interface ThemeSelectorProps {
   variant?: "black" | "orange";
@@ -23,8 +24,8 @@ const THEMELIST = [
 export function ThemeSelector({ variant = "black" }: ThemeSelectorProps) {
   const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const containerRef = useRef<HTMLDivElement>(null);
   const popoverRef = useRef<HTMLDivElement>(null);
+  const containerRef = useClickOutside(() => setIsOpen(false));
 
   const { theme, setTheme } = useTheme();
 
