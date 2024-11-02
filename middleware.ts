@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { userAgent } from "next/server";
 
 const supportedLanguages = ["en", "ko"];
 
@@ -20,36 +19,26 @@ function getPreferredLanguage(request: NextRequest): string {
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
-
-  if (pathname.match(/\.(svg|png|jpg|jpeg|gif|ico|json|txt|pdf|xml|js|css)$/)) {
-    return NextResponse.next();
-  }
-
-  const { device } = userAgent(request);
-  const viewport = device.type === "mobile" ? "mobile" : "desktop";
+  const response = NextResponse.next();
 
   if (
     supportedLanguages.some(
       (lang) => pathname.startsWith(`/${lang}/`) || pathname === `/${lang}`,
     )
   ) {
-    const currentViewport = request.nextUrl.searchParams.get("viewport");
-    if (!currentViewport) {
-      const newUrl = request.nextUrl;
-      newUrl.searchParams.set("viewport", viewport);
-      console.log("rewrite", newUrl.searchParams.get("viewport"));
-      return NextResponse.redirect(newUrl);
-    }
-    return NextResponse.next();
+    return response;
   }
 
   const lang = getPreferredLanguage(request);
   const newUrl = new URL(`/${lang}${pathname}`, request.url);
-  newUrl.searchParams.set("viewport", viewport);
 
-  return NextResponse.redirect(newUrl);
+  const redirectResponse = NextResponse.redirect(newUrl);
+
+  return redirectResponse;
 }
 
 export const config = {
-  matcher: ["/((?!api|_next/static|_next/image|favicon.ico).*)"],
+  matcher: [
+    "/((?!api|_next/static|_next/image|favicon\\.ico|.*\\.(?:png|jpg|jpeg|gif|webp|svg|ico|bmp|tiff|css|js|map|json|txt|xml|woff|woff2|eot|ttf|otf|txt)$).*)",
+  ],
 };
