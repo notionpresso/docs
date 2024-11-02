@@ -11,7 +11,6 @@
 
 html,
 body {
-  overflow-y: scroll;
   height: 100%;
 }
 
@@ -48,8 +47,6 @@ ol {
 /* Global Styles */
 body {
   line-height: 1.6;
-  background-color: #f8f9fa;
-  color: #343a40;
 }
 
 h1,
@@ -104,8 +101,7 @@ h6 {
 
 /* For WebKit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -121,13 +117,12 @@ h6 {
   background: transparent;
 }
 
-/* For Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #fe6f21 transparent;
-}
-
 /* Optional: Hover effects for better interactivity */
 ::-webkit-scrollbar-thumb:hover {
   background-color: #e85f11;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #fe6f21 transparent;
 }
