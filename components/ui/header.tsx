@@ -14,17 +14,6 @@ import ThemeSelector from "./theme-selector";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
-  useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
-    return () => {
-      document.body.style.overflow = "unset";
-    };
-  }, [isMenuOpen]);
-
   const shouldShowIcon = (title: string) => {
     return ["Blog", "Github"].includes(title);
   };
@@ -79,7 +68,7 @@ export default function Header() {
       {/* Drawer */}
       <div
         className={cn(
-          "fixed top-0 right-0 bottom-0 w-full bg-white dark:bg-black z-50 p-6 transform transition-transform duration-300 ease-in-out md:hidden",
+          "fixed top-0 right-0 bottom-0 w-full bg-white dark:bg-black z-50 p-6 transform transition-transform duration-300 ease-in-out md:hidden ov",
           isMenuOpen ? "translate-x-0" : "translate-x-full",
         )}
       >
