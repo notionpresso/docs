@@ -113,13 +113,13 @@ export default function Header() {
             </div>
             <div className={cn("flex gap-4")}>
               {SNS.map((item) => (
-                <Link
+                <a
                   key={item.title}
                   href={item.href}
                   className={cn("text-primary-400")}
                 >
                   {item.title}
-                </Link>
+                </a>
               ))}
             </div>
           </div>
