@@ -1,5 +1,6 @@
 import React from "react";
 import ModernTechPortfolio from "./assets/modern-tech.png";
+import Link from "next/link";
 
 interface ShowcaseItem {
   title: string;
@@ -73,12 +74,12 @@ const ShowcasePage = () => {
                     {item.description}
                   </p>
                   <div className="mt-4 flex items-center gap-4">
-                    <a
+                    <Link
                       href={item.link}
                       className="inline-flex items-center text-body2 text-primary-500 hover:text-primary-600"
                     >
                       Visit Site →
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

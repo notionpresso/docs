@@ -10,6 +10,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { useState, useEffect } from "react";
 import ThemeSelector from "./theme-selector";
+import Link from "next/link";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -35,14 +36,14 @@ export default function Header() {
         {/* Desktop Header */}
         <div className="hidden md:block">
           <div className="h-[80px] p-5 flex items-center justify-between">
-            <a href="/">
+            <Link href="/">
               <p className="text-h2 text-white dark:text-primary-400">
                 Notion Presso
               </p>
-            </a>
+            </Link>
             <div className="flex items-center gap-10">
               {HEADERLIST.map((item) => (
-                <a
+                <Link
                   key={item.title}
                   href={item.href}
                   className="text-subhead1 text-white dark:text-primary-400 flex gap-1 hover:text-black"
@@ -51,7 +52,7 @@ export default function Header() {
                   {shouldShowIcon(item.title) && (
                     <ArrowUpRightIcon className="w-3 h-3" />
                   )}
-                </a>
+                </Link>
               ))}
               <LanguageSelector />
             </div>
@@ -61,11 +62,11 @@ export default function Header() {
         {/* Mobile Header */}
         <div className="md:hidden">
           <div className="p-4 flex items-center justify-between">
-            <a href="/">
+            <Link href="/">
               <p className="text-h2 text-white dark:text-primary-400">
                 Notion Presso
               </p>
-            </a>
+            </Link>
             <button
               onClick={() => setIsMenuOpen(true)}
               className="text-white p-2"
@@ -92,7 +93,7 @@ export default function Header() {
         <div className="flex flex-col px-6 py-4">
           <div className="flex flex-col gap-6 mb-auto">
             {HEADERLIST.map((item) => (
-              <a
+              <Link
                 key={item.title}
                 href={item.href}
                 className="text-h3 text-primary flex items-center gap-1"
@@ -101,7 +102,7 @@ export default function Header() {
                 {shouldShowIcon(item.title) && (
                   <ArrowUpRightIcon className="w-4 h-4" />
                 )}
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -112,13 +113,13 @@ export default function Header() {
             </div>
             <div className={cn("flex gap-4")}>
               {SNS.map((item) => (
-                <a
+                <Link
                   key={item.title}
                   href={item.href}
                   className={cn("text-primary-400")}
                 >
                   {item.title}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
