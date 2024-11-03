@@ -12,10 +12,12 @@ import { useState, useEffect } from "react";
 import ThemeSelector from "./theme-selector";
 import Link from "next/link";
 import { useTranslations } from "@/i18n";
+import { useCurrentLanguage } from "@/i18n/use-current-language";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const t = useTranslations("header");
+  const lang = useCurrentLanguage();
 
   useEffect(() => {
     if (isMenuOpen) {
@@ -35,19 +37,19 @@ export default function Header() {
   const items = [
     {
       title: t("docs"),
-      href: `/docs/getting-started/introduction`,
+      href: `/${lang}/docs/getting-started/introduction`,
     },
     {
       title: t("tutorial"),
-      href: "/tutorial",
+      href: `/${lang}/tutorial`,
     },
     {
       title: t("contributing"),
-      href: "/contributing",
+      href: `/${lang}/contributing`,
     },
     {
       title: t("showcase"),
-      href: "/showcase",
+      href: `/${lang}/showcase`,
     },
     {
       title: t("blog"),
@@ -65,7 +67,7 @@ export default function Header() {
         {/* Desktop Header */}
         <div className="hidden md:block">
           <div className="h-[80px] p-5 flex items-center justify-between">
-            <Link href="/">
+            <Link href={`/${lang}`}>
               <p className="text-h2 text-white dark:text-primary-400">
                 Notion Presso
               </p>

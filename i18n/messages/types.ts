@@ -8,4 +8,7 @@ export type Messages = {
     contributing: string;
     showcase: string;
   };
+  home: {
+    title: string;
+  };
 };

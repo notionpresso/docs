@@ -10,6 +10,9 @@ const en: Messages = {
     contributing: "Contributing",
     showcase: "Showcase",
   },
+  home: {
+    title: "Just a cup of coffee\nwith NotionPresso",
+  },
 };
 
 export default en;
