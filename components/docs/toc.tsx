@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface TOCItem {
   id: string;
   title: string;
@@ -13,12 +15,12 @@ export default function TOC({ items }: TOCProps) {
       <ul>
         {items.map((item) => (
           <li key={item.id}>
-            <a
+            <Link
               href={`#${item.id}`}
               className={`text-sm hover:font-bold dark:text-gray-500 dark:hover:text-white`}
             >
               {item.title}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
