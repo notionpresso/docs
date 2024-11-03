@@ -8,7 +8,7 @@ import {
   Bars3Icon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import ThemeSelector from "./theme-selector";
 import Link from "next/link";
 import { useTranslations } from "@/i18n";
@@ -20,17 +20,19 @@ export default function Header() {
   const t = useTranslations("header");
   const lang = useCurrentLanguage();
   const pathname = usePathname();
+  const previousPathname = useRef<string>();
 
   useEffect(() => {
-    if (isMenuOpen) {
+    if (isMenuOpen && previousPathname.current !== pathname) {
       const timeout = setTimeout(() => {
         requestAnimationFrame(() => {
           setIsMenuOpen(false);
         });
-      }, 50);
+      }, 100);
 
       return () => clearTimeout(timeout);
     }
+    previousPathname.current = pathname;
   }, [pathname, isMenuOpen]);
 
   useEffect(() => {
