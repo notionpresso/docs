@@ -23,19 +23,6 @@ export default function Header() {
   const previousPathname = useRef<string>();
 
   useEffect(() => {
-    if (isMenuOpen && previousPathname.current !== pathname) {
-      const timeout = setTimeout(() => {
-        requestAnimationFrame(() => {
-          setIsMenuOpen(false);
-        });
-      }, 100);
-
-      return () => clearTimeout(timeout);
-    }
-    previousPathname.current = pathname;
-  }, [pathname, isMenuOpen]);
-
-  useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = "hidden";
     } else {
@@ -48,6 +35,19 @@ export default function Header() {
 
   const shouldShowIcon = (title: string) => {
     return ["Blog", "Github"].includes(title);
+  };
+
+  const handleModalClose = () => {
+    if (previousPathname.current !== pathname) {
+      setTimeout(() => {
+        requestAnimationFrame(() => {
+          setIsMenuOpen(false);
+        });
+      }, 100);
+    } else {
+      setIsMenuOpen(false);
+    }
+    previousPathname.current = pathname;
   };
 
   const items = [
@@ -132,7 +132,7 @@ export default function Header() {
         )}
       >
         <div className="flex justify-end">
-          <button onClick={() => setIsMenuOpen(false)} className="text-primary">
+          <button onClick={handleModalClose} className="text-primary">
             <XMarkIcon className="w-6 h-6" />
           </button>
         </div>
@@ -143,7 +143,7 @@ export default function Header() {
               <Link
                 key={item.title}
                 href={item.href}
-                onClick={() => setIsMenuOpen(false)}
+                onClick={handleModalClose}
                 className="text-h3 text-primary flex items-center gap-1"
               >
                 {item.title}
