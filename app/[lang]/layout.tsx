@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/ui/header";
 import Script from "next/script";
 import TranslationsProvider from "@/i18n/translations-provider";
+import { getServerTranslations } from "@/i18n";
 
 const pretendard = localFont({
   src: "../fonts/Pretendard-Regular.woff",
@@ -16,8 +17,33 @@ export async function generateMetadata({
 }: {
   params: { lang: string };
 }): Promise<Metadata> {
-  // TODO: Generate metadata depending on the lang
-  return {};
+  const t = await getServerTranslations("metadata");
+  return {
+    title: t("title"),
+    description: t("description"),
+    keywords: t("keywords"),
+    openGraph: {
+      title: t("og.title"),
+      description: t("og.description"),
+      siteName: t("og.siteName"),
+      images: [
+        {
+          url: "/icon.jpeg",
+          alt: t("og.imageAlt"),
+        },
+      ],
+    },
+    twitter: {
+      title: t("twitter.title"),
+      description: t("twitter.description"),
+      images: [
+        {
+          url: "/icon.jpeg",
+          alt: t("twitter.imageAlt"),
+        },
+      ],
+    },
+  };
 }
 
 export default function RootLayout({

@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { LanguageIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import { useRouter, usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { LANGUAGE_LIST } from "@/constants/constants";
+import { LANGUAGE_LIST } from "@/i18n/supported-languages";
 import useClickOutside from "@/hooks/useClickOutside";
 
 interface LanguageSelectorProps {

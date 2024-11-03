@@ -7,18 +7,12 @@ import { getServerCurrentLanguage } from "./get-server-current-language";
 
 type Variables = { [key: string]: string | number };
 
-export async function getServerTranslations(namespace?: keyof Messages) {
+export async function getServerTranslations(namespace: keyof Messages) {
   let lang = getServerCurrentLanguage();
   const messages = await loadTranslations(lang);
 
   function t(key: string, variables?: Variables): string {
-    let template: string;
-
-    if (namespace) {
-      template = (messages[namespace] as any)?.[key] || "";
-    } else {
-      template = (messages as any)?.[key] || "";
-    }
+    const template = (messages[namespace] as any)?.[key] || "";
 
     if (variables) {
       return interpolate(template, variables);
