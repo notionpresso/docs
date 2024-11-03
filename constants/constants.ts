@@ -1,14 +1,3 @@
-export const LANGUAGE_LIST = [
-  {
-    title: "English",
-    locale: "en",
-  },
-  {
-    title: "한국어",
-    locale: "ko",
-  },
-] as const;
-
 export const SNS = [
   {
     title: "Discord",
