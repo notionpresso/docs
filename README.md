@@ -49,6 +49,7 @@ For detailed guides and documentation, visit our [official documentation](https:
 - [Getting Started Guide](https://notionpresso.com/docs/getting-started/introduction)
 - [Tutorial](https://notionpresso.com/tutorial)
 - [Blog Template](https://nextjs-blog-template.pages.dev/)
+- [Showcase](https://notionpresso.com/showcase)
 
 ## Contributing
 
