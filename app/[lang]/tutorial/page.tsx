@@ -2,12 +2,13 @@ import { NotionRenderer } from "@/components/notion-renderer";
 import * as kr from "@/content/tutorial/ko/126ce18c-fd83-80a5-8260-d757c56405b2.json";
 import * as en from "@/content/tutorial/en/12ace18c-fd83-8071-b3a5-dd8d21da61cf.json";
 import type { Metadata } from "next";
+import { SUPPORTED_LANGUAGES } from "@/i18n/supported-languages";
 
 export const runtime = "edge";
 
-export async function generateStaticParams() {
-  return [{ lang: "ko" }, { lang: "en" }];
-}
+export const generateStaticParams = () => {
+  return SUPPORTED_LANGUAGES.map((lang) => ({ lang }));
+};
 
 export async function generateMetadata({
   params,

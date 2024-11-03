@@ -1,4 +1,5 @@
 import { DocsLayout } from "@/components/docs";
+import { SUPPORTED_LANGUAGES } from "@/i18n/supported-languages";
 import { getAllDocuments, getDocumentBySlug } from "@/lib/mdx";
 import { Metadata } from "next";
 
@@ -15,7 +16,7 @@ interface GuidePageProps {
 
 // Generate static params at build time
 export async function generateStaticParams() {
-  const supportedLanguages = ["en", "ko"];
+  const supportedLanguages = SUPPORTED_LANGUAGES;
   const params: GuidePageProps["params"][] = [];
 
   for (const lang of supportedLanguages) {
