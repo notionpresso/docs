@@ -4,9 +4,11 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "@/i18n";
 
 export function LandingHero() {
   const router = useRouter();
+  const t = useTranslations("home");
 
   return (
     <section
@@ -30,10 +32,12 @@ export function LandingHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className={cn("text-h2 sm:text-display text-center mb-8")}>
-              Just a cup of coffee
-              <br />
-              with NotionPresso
+            <h1
+              className={cn(
+                "text-h2 sm:text-display text-center mb-8 whitespace-pre",
+              )}
+            >
+              {t("title")}
             </h1>
 
             <div className={cn("flex flex-col sm:flex-row gap-4 mt-8")}>
@@ -44,11 +48,12 @@ export function LandingHero() {
                   "bg-white text-primary-500",
                   "hover:bg-primary-50 transition-colors",
                 )}
+                role="link"
                 onClick={() => router.push("/tutorial")}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                Get Started
+                {t("getStarted")}
                 <ArrowRightIcon className={cn("w-4 h-4")} />
               </motion.button>
 
@@ -59,11 +64,12 @@ export function LandingHero() {
                   "bg-transparent border-2 border-white",
                   "hover:bg-white/10 transition-colors",
                 )}
+                role="link"
                 onClick={() => router.push("/docs")}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                Read the Docs
+                {t("readMore")}
                 <ArrowRightIcon className={cn("w-4 h-4")} />
               </motion.button>
             </div>

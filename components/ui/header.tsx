@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { LanguageSelector } from "./language-selector";
-import { HEADERLIST, SNS } from "@/constants/constants";
+import { SNS } from "@/constants/constants";
 import {
   ArrowUpRightIcon,
   Bars3Icon,
@@ -11,9 +11,13 @@ import {
 import { useState, useEffect } from "react";
 import ThemeSelector from "./theme-selector";
 import Link from "next/link";
+import { useTranslations } from "@/i18n";
+import { useCurrentLanguage } from "@/i18n/use-current-language";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const t = useTranslations("header");
+  const lang = useCurrentLanguage();
 
   useEffect(() => {
     if (isMenuOpen) {
@@ -30,19 +34,46 @@ export default function Header() {
     return ["Blog", "Github"].includes(title);
   };
 
+  const items = [
+    {
+      title: t("docs"),
+      href: `/${lang}/docs/getting-started/introduction`,
+    },
+    {
+      title: t("tutorial"),
+      href: `/${lang}/tutorial`,
+    },
+    {
+      title: t("contributing"),
+      href: `/${lang}/contributing`,
+    },
+    {
+      title: t("showcase"),
+      href: `/${lang}/showcase`,
+    },
+    {
+      title: t("blog"),
+      href: "https://nextjs-blog-template.pages.dev/",
+    },
+    {
+      title: t("github"),
+      href: "https://github.com/notionpresso",
+    },
+  ] as const;
+
   return (
     <>
       <header className={cn("bg-primary dark:bg-black")}>
         {/* Desktop Header */}
         <div className="hidden md:block">
           <div className="h-[80px] p-5 flex items-center justify-between">
-            <Link href="/">
+            <Link href={`/${lang}`}>
               <p className="text-h2 text-white dark:text-primary-400">
                 Notion Presso
               </p>
             </Link>
             <div className="flex items-center gap-10">
-              {HEADERLIST.map((item) => (
+              {items.map((item) => (
                 <Link
                   key={item.title}
                   href={item.href}
@@ -92,7 +123,7 @@ export default function Header() {
 
         <div className="flex flex-col px-6 py-4">
           <div className="flex flex-col gap-6 mb-auto">
-            {HEADERLIST.map((item) => (
+            {items.map((item) => (
               <Link
                 key={item.title}
                 href={item.href}
