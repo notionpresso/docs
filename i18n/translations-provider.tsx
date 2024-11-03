@@ -1,7 +1,6 @@
 "use server";
 import { ClientTranslationsProvider } from "./client-translations-provider";
 import { loadTranslations } from "./load-translations";
-import { SupportedLanguage } from "./supported-languages";
 
 export default async function TranslationsProvider({
   children,
@@ -12,7 +11,7 @@ export default async function TranslationsProvider({
 }) {
   const messages = await loadTranslations(lang);
   return (
-    <ClientTranslationsProvider messages={messages}>
+    <ClientTranslationsProvider messages={messages} lang={lang}>
       {children}
     </ClientTranslationsProvider>
   );

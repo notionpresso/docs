@@ -1,9 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import {
-  SUPPORTED_LANGUAGES,
-  DEFAULT_LANGUAGE,
-} from "@/i18n/supported-languages";
+import { SUPPORTED_LANGUAGES } from "@/i18n/supported-languages";
 import { getPreferredLanguage } from "./i18n/get-preffered-language";
 
 export function middleware(
