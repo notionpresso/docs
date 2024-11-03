@@ -6,6 +6,9 @@ const ko: Messages = {
     blog: "블로그",
     github: "깃허브",
     docs: "문서",
+    tutorial: "튜토리얼",
+    contributing: "기여하기",
+    showcase: "쇼케이스",
   },
 };
 

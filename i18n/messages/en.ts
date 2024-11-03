@@ -2,10 +2,13 @@ import { Messages } from "./types";
 
 const en: Messages = {
   header: {
-    home: "홈",
-    blog: "블로그",
-    github: "깃허브",
-    docs: "문서",
+    home: "Home",
+    blog: "Blog",
+    github: "Github",
+    docs: "Docs",
+    tutorial: "Tutorial",
+    contributing: "Contributing",
+    showcase: "Showcase",
   },
 };
 

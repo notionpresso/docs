@@ -1,30 +1,3 @@
-export const HEADERLIST = [
-  {
-    title: "Docs",
-    href: `/docs/getting-started/introduction`,
-  },
-  {
-    title: "Tutorial",
-    href: "/tutorial",
-  },
-  {
-    title: "Contributing",
-    href: "/contributing",
-  },
-  {
-    title: "Showcase",
-    href: "/showcase",
-  },
-  {
-    title: "Blog",
-    href: "https://nextjs-blog-template.pages.dev/",
-  },
-  {
-    title: "Github",
-    href: "https://github.com/notionpresso",
-  },
-] as const;
-
 export const LANGUAGELIST = [
   {
     title: "English",
