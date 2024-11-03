@@ -2,6 +2,28 @@
   "name": "docs",
   "version": "0.1.0",
   "private": true,
+  "description": "NotionPresso Documentation site built with Next.js",
+  "author": {
+    "name": "notionpresso",
+    "email": "helper.notionpresso@gmail.com",
+    "url": "https://notionpresso.com"
+  },
+  "homepage": "https://notionpresso.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/notionpresso/docs"
+  },
+  "bugs": {
+    "url": "https://github.com/notionpresso/docs/issues"
+  },
+  "keywords": [
+    "nextjs",
+    "react",
+    "typescript",
+    "tailwindcss",
+    "documentation"
+  ],
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "prod": "next build && next start",
