@@ -13,11 +13,25 @@ import ThemeSelector from "./theme-selector";
 import Link from "next/link";
 import { useTranslations } from "@/i18n";
 import { useCurrentLanguage } from "@/i18n/use-current-language";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const t = useTranslations("header");
   const lang = useCurrentLanguage();
+  const pathname = usePathname();
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      const timeout = setTimeout(() => {
+        requestAnimationFrame(() => {
+          setIsMenuOpen(false);
+        });
+      }, 50);
+
+      return () => clearTimeout(timeout);
+    }
+  }, [pathname, isMenuOpen]);
 
   useEffect(() => {
     if (isMenuOpen) {
