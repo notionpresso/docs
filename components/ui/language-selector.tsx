@@ -1,33 +1,28 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import { LanguageIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import { useRouter, usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { LANGUAGE_LIST } from "@/i18n/supported-languages";
 import useClickOutside from "@/hooks/useClickOutside";
+import { useCurrentLanguage } from "@/i18n";
 
 interface LanguageSelectorProps {
   variant?: "white" | "orange";
 }
 
 export function LanguageSelector({ variant = "white" }: LanguageSelectorProps) {
-  const router = useRouter();
-  const pathname = usePathname();
-  const [currentLang, setCurrentLang] = useState("en");
+  const currentLang = useCurrentLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const popoverRef = useRef<HTMLDivElement>(null);
   const containerRef = useClickOutside(() => setIsOpen(false));
-
-  useEffect(() => {
-    const lang = pathname.split("/")[1];
-    setCurrentLang(lang);
-  }, [pathname]);
+  const pathname = usePathname();
+  const router = useRouter();
 
   const changeLanguage = (newLang: string) => {
     const newPathname = pathname.replace(`/${currentLang}`, `/${newLang}`);
     router.push(newPathname);
-    setCurrentLang(newLang);
     setIsOpen(false);
   };
 
@@ -37,9 +32,7 @@ export function LanguageSelector({ variant = "white" }: LanguageSelectorProps) {
         onClick={() => setIsOpen(!isOpen)}
         className={cn(
           "inline-flex items-center justify-center gap-1 rounded-lg p-2",
-          // White variant
           variant === "white" && ["text-white dark:text-primary-400"],
-          // Orange variant
           variant === "orange" && ["text-primary-400 dark:text-primary-400"],
         )}
       >
@@ -74,6 +67,8 @@ export function LanguageSelector({ variant = "white" }: LanguageSelectorProps) {
                   "w-full text-left px-4 py-2",
                   "text-sm text-black dark:text-primary-400",
                   "transition-colors duration-150",
+                  language.locale === currentLang &&
+                    "bg-neutral-100 dark:bg-black",
                 )}
               >
                 {language.title}

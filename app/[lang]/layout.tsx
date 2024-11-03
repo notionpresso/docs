@@ -12,11 +12,7 @@ const pretendard = localFont({
   weight: "100 900",
 });
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { lang: string };
-}): Promise<Metadata> {
+export async function generateMetadata(): Promise<Metadata> {
   const t = await getServerTranslations("metadata");
   return {
     title: t("title"),
