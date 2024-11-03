@@ -1,6 +1,6 @@
 "use server";
-import { ClientTranslationsProvider } from "./client-translations-provider";
-import { loadTranslations } from "./load-translations";
+import { ClientTranslationsProvider } from "./internal/client-translations-provider";
+import { loadTranslations } from "./internal/load-translations";
 
 export default async function TranslationsProvider({
   children,

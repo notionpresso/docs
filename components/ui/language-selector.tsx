@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { LanguageIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import { useRouter, usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { LANGUAGELIST } from "@/constants/constants";
+import { LANGUAGE_LIST } from "@/constants/constants";
 import useClickOutside from "@/hooks/useClickOutside";
 
 interface LanguageSelectorProps {
@@ -66,7 +66,7 @@ export function LanguageSelector({ variant = "white" }: LanguageSelectorProps) {
           )}
         >
           <div className="py-1" role="none">
-            {LANGUAGELIST.map((language) => (
+            {LANGUAGE_LIST.map((language) => (
               <button
                 key={language.title}
                 onClick={() => changeLanguage(language.locale)}

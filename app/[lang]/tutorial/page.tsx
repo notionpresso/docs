@@ -1,21 +1,19 @@
 import { NotionRenderer } from "@/components/notion-renderer";
-import * as kr from "@/content/tutorial/ko/126ce18c-fd83-80a5-8260-d757c56405b2.json";
+//TODO: dynamic import is needed for better performance (don't need to import all the content at once)
+import * as ko from "@/content/tutorial/ko/126ce18c-fd83-80a5-8260-d757c56405b2.json";
 import * as en from "@/content/tutorial/en/12ace18c-fd83-8071-b3a5-dd8d21da61cf.json";
 import type { Metadata } from "next";
-import { SUPPORTED_LANGUAGES } from "@/i18n/supported-languages";
 
 export const runtime = "edge";
 
-export const generateStaticParams = () => {
-  return SUPPORTED_LANGUAGES.map((lang) => ({ lang }));
-};
+export { generateStaticParams } from "@/i18n";
 
 export async function generateMetadata({
   params,
 }: {
   params: { lang: string };
 }): Promise<Metadata> {
-  const content = params.lang === "ko" ? kr : en;
+  const content = params.lang === "ko" ? ko : en;
   const title = content.properties.title.title[0].plain_text;
 
   return {
@@ -37,7 +35,7 @@ export async function generateMetadata({
 }
 
 export default function TutorialPage({ params }: { params: { lang: string } }) {
-  const content = params.lang === "ko" ? kr : en;
+  const content = params.lang === "ko" ? ko : en;
   const title = content.properties.title.title[0].plain_text;
 
   return (

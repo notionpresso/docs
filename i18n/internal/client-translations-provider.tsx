@@ -1,7 +1,7 @@
 "use client";
 
 import React, { createContext } from "react";
-import { Messages } from "./messages/types";
+import { Messages } from "../messages/types";
 
 interface TranslationsContextType {
   messages: Messages;

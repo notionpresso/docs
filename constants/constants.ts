@@ -1,4 +1,4 @@
-export const LANGUAGELIST = [
+export const LANGUAGE_LIST = [
   {
     title: "English",
     locale: "en",

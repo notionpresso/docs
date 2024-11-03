@@ -1,7 +1,7 @@
 "use client";
 
 import { useContext } from "react";
-import { TranslationsContext } from "./client-translations-provider";
+import { TranslationsContext } from "./internal/client-translations-provider";
 
 export function useCurrentLanguage() {
   const { lang } = useContext(TranslationsContext);

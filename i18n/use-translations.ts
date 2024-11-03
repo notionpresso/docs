@@ -1,8 +1,8 @@
 "use client";
 
 import { useContext } from "react";
-import { TranslationsContext } from "./client-translations-provider";
-import { interpolate } from "./interpolate";
+import { TranslationsContext } from "./internal/client-translations-provider";
+import { interpolate } from "./internal/interpolate";
 import { Messages } from "./messages/types";
 
 // 중첩된 키를 점으로 연결하여 추출하는 유틸리티 타입
