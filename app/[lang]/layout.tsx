@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/ui/header";
 import Script from "next/script";
+import TranslationsProvider from "@/i18n/translations-provider";
 
 const pretendard = localFont({
   src: "../fonts/Pretendard-Regular.woff",
@@ -14,7 +15,7 @@ export async function generateMetadata({
   params,
 }: {
   params: { lang: string };
-}) {
+}): Promise<Metadata> {
   // TODO: Generate metadata depending on the lang
   return {};
 }
@@ -47,8 +48,10 @@ export default function RootLayout({
       </head>
       <body className={`${pretendard.variable} font-sans`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Header />
-          <main className="dark:bg-black">{children}</main>
+          <TranslationsProvider lang={params.lang}>
+            <Header />
+            <main className="dark:bg-black">{children}</main>
+          </TranslationsProvider>
         </ThemeProvider>
       </body>
     </html>
