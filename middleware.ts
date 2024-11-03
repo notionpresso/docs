@@ -1,28 +1,20 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import {
+  SUPPORTED_LANGUAGES,
+  DEFAULT_LANGUAGE,
+} from "@/i18n/supported-languages";
+import { getPreferredLanguage } from "./i18n/get-preffered-language";
 
-const supportedLanguages = ["en", "ko"];
-
-function getPreferredLanguage(request: NextRequest): string {
-  const acceptLanguage = request.headers.get("accept-language");
-  if (!acceptLanguage) return "en";
-
-  const langs = acceptLanguage.split(",").map((lang) => lang.split(";")[0]);
-  for (const lang of langs) {
-    const shortLang = lang.slice(0, 2).toLowerCase();
-    if (supportedLanguages.includes(shortLang)) {
-      return shortLang;
-    }
-  }
-  return "en";
-}
-
-export function middleware(request: NextRequest) {
+export function middleware(
+  request: NextRequest,
+  _response?: NextResponse,
+): NextResponse {
   const { pathname } = request.nextUrl;
   const response = NextResponse.next();
 
   if (
-    supportedLanguages.some(
+    SUPPORTED_LANGUAGES.some(
       (lang) => pathname.startsWith(`/${lang}/`) || pathname === `/${lang}`,
     )
   ) {
