@@ -11,7 +11,9 @@ const ko: Messages = {
     showcase: "쇼케이스",
   },
   home: {
-    title: "노션프레소와 함께하는 커피 한 잔",
+    title: "커피 한 잔과\n노션프레소",
+    getStarted: "시작하기",
+    readMore: "문서보기",
   },
 };
 

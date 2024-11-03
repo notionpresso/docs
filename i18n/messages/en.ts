@@ -12,6 +12,8 @@ const en: Messages = {
   },
   home: {
     title: "Just a cup of coffee\nwith NotionPresso",
+    getStarted: "Get Started",
+    readMore: "Read the Docs",
   },
 };
 

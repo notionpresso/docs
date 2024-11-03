@@ -10,5 +10,7 @@ export type Messages = {
   };
   home: {
     title: string;
+    getStarted: string;
+    readMore: string;
   };
 };
