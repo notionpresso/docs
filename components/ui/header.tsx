@@ -130,7 +130,7 @@ export default function Header() {
                 key={item.title}
                 href={item.href}
                 onClick={() => {
-                  router.push(item.href);
+                  setIsMenuOpen(false);
                   requestAnimationFrame(() => {
                     router.push(item.href);
                   });
