@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NotionPresso Documentation
+
+<p align="center">
+  <a href="https://notionpresso.com">
+    <img src="https://notionpresso.com/icon.jpeg" height="128">
+  </a>
+  <h1 align="center">NotionPresso Documentation</h1>
+</p>
+
+<p align="center">
+  <a aria-label="NPM version" href="https://www.npmjs.com/package/@notionpresso/react">
+    <img alt="" src="https://img.shields.io/npm/v/@notionpresso/react.svg?style=for-the-badge&labelColor=000000">
+  </a>
+  <a aria-label="License" href="https://github.com/notionpresso/nextjs-blog-template/blob/main/LICENSE">
+    <img alt="" src="https://img.shields.io/npm/l/@notionpresso/react.svg?style=for-the-badge&labelColor=000000">
+  </a>
+</p>
+
+NotionPresso is an open-source project that enables developers to create their own blog using Notion as a CMS. It's the first React rendering library that utilizes Notion's official API, offering unlimited customization possibilities.
+
+## Key Features
+
+### Technical Highlights
+
+- **First Official API-based React Library**: Built on Notion's official API for stable and extensible rendering
+- **Complete TypeScript Support**: Fully typed components and APIs for better development experience
+- **Customizable Component System**: Flexible architecture allowing infinite customization possibilities
+
+### For Blog Creators
+
+- **Free Blog Hosting**: Create and host your blog completely free using our guides
+- **Quick Deployment**: Set up your blog in minutes with our step-by-step deployment guide
+- **Familiar Writing Experience**: Use Notion's powerful editor for content creation
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Install the core package
+npm install @notionpresso/react
+
+# For CLI tools
+npm install -g @notionpresso/cli
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+For detailed guides and documentation, visit our [official documentation](https://notionpresso.com).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Documentation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [Getting Started Guide](https://notionpresso.com/docs/getting-started/introduction)
+- [Tutorial](https://notionpresso.com/tutorial)
+- [Blog Template](https://nextjs-blog-template.pages.dev/)
+- [Showcase](https://notionpresso.com/showcase)
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+We welcome contributions! Please see our [contributing guide](https://notionpresso.com/contributing) for details.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT © [NotionPresso](https://notionpresso.com)
