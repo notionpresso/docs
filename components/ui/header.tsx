@@ -8,19 +8,18 @@ import {
   Bars3Icon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import ThemeSelector from "./theme-selector";
 import Link from "next/link";
 import { useTranslations } from "@/i18n";
 import { useCurrentLanguage } from "@/i18n/use-current-language";
-import { usePathname } from "next/navigation";
+import { useRouter } from "next/router";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const t = useTranslations("header");
   const lang = useCurrentLanguage();
-  const pathname = usePathname();
-  const previousPathname = useRef<string>();
+  const router = useRouter();
 
   useEffect(() => {
     if (isMenuOpen) {
@@ -35,19 +34,6 @@ export default function Header() {
 
   const shouldShowIcon = (title: string) => {
     return ["Blog", "Github"].includes(title);
-  };
-
-  const handleModalClose = () => {
-    if (previousPathname.current !== pathname) {
-      setTimeout(() => {
-        requestAnimationFrame(() => {
-          setIsMenuOpen(false);
-        });
-      }, 100);
-    } else {
-      setIsMenuOpen(false);
-    }
-    previousPathname.current = pathname;
   };
 
   const items = [
@@ -132,7 +118,7 @@ export default function Header() {
         )}
       >
         <div className="flex justify-end">
-          <button onClick={handleModalClose} className="text-primary">
+          <button onClick={() => setIsMenuOpen(false)} className="text-primary">
             <XMarkIcon className="w-6 h-6" />
           </button>
         </div>
@@ -143,7 +129,10 @@ export default function Header() {
               <Link
                 key={item.title}
                 href={item.href}
-                onClick={handleModalClose}
+                onClick={() => {
+                  router.push(item.href);
+                  setIsMenuOpen(false);
+                }}
                 className="text-h3 text-primary flex items-center gap-1"
               >
                 {item.title}
