@@ -126,9 +126,8 @@ export default function Header() {
         <div className="flex flex-col px-6 py-4">
           <div className="flex flex-col gap-6 mb-auto">
             {items.map((item) => (
-              <Link
+              <li
                 key={item.title}
-                href={item.href}
                 onClick={() => {
                   router.push(item.href);
                   requestAnimationFrame(() => {
@@ -141,7 +140,7 @@ export default function Header() {
                 {shouldShowIcon(item.title) && (
                   <ArrowUpRightIcon className="w-4 h-4" />
                 )}
-              </Link>
+              </li>
             ))}
           </div>
 
