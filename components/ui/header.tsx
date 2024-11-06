@@ -13,11 +13,22 @@ import ThemeSelector from "./theme-selector";
 import Link from "next/link";
 import { useTranslations } from "@/i18n";
 import { useCurrentLanguage } from "@/i18n/use-current-language";
+import { useQueryParams } from "@/hooks/use-query-params";
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const t = useTranslations("header");
   const lang = useCurrentLanguage();
+  const [{ menu: isMenuOpen = false }, setQueryParams] = useQueryParams({
+    menu: "boolean",
+  });
+  console.log(isMenuOpen);
+  useEffect(() => {
+    console.log(isMenuOpen);
+  }, [isMenuOpen]);
+
+  const setIsMenuOpen = (value: boolean) => {
+    setQueryParams({ menu: value });
+  };
 
   useEffect(() => {
     if (isMenuOpen) {
