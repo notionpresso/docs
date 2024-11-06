@@ -131,7 +131,9 @@ export default function Header() {
                 href={item.href}
                 onClick={() => {
                   router.push(item.href);
-                  setIsMenuOpen(false);
+                  requestAnimationFrame(() => {
+                    router.push(item.href);
+                  });
                 }}
                 className="text-h3 text-primary flex items-center gap-1"
               >
