@@ -1,13 +1,13 @@
-export type GapMode = "padding" | "margin";
+type GapMode = "padding" | "margin";
 
-export interface GapOffset {
+interface GapOffset {
   left: number;
   top: number;
   right: number;
   gap: number;
 }
 
-export const zeroGap = {
+const zeroGap = {
   left: 0,
   top: 0,
   right: 0,
@@ -26,7 +26,7 @@ const getOffset = (gapMode: GapMode): number[] => {
   return [parse(left), parse(top), parse(right)];
 };
 
-export const getGapWidth = (gapMode: GapMode = "margin"): GapOffset => {
+const getGapWidth = (gapMode: GapMode = "margin"): GapOffset => {
   if (typeof window === "undefined") {
     return zeroGap;
   }
@@ -42,3 +42,16 @@ export const getGapWidth = (gapMode: GapMode = "margin"): GapOffset => {
     gap: Math.max(0, windowWidth - documentWidth + offsets[2] - offsets[0]),
   };
 };
+
+const preventScroll = (isOpen: boolean) => {
+  if (isOpen) {
+    const { gap } = getGapWidth("padding");
+    document.body.style.overflow = "hidden";
+    document.body.style.paddingRight = `${gap}px`;
+  } else {
+    document.body.style.overflow = "";
+    document.body.style.paddingRight = "";
+  }
+};
+
+export default preventScroll;
