@@ -13,31 +13,13 @@ import ThemeSelector from "./theme-selector";
 import Link from "next/link";
 import { useTranslations } from "@/i18n";
 import { useCurrentLanguage } from "@/i18n/use-current-language";
-import { getGapWidth } from "@/lib/prevent-scrollbar-shift";
+import usePreventScroll from "@/hooks/usePreventScroll";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  usePreventScroll({ isOpen: isMenuOpen });
   const t = useTranslations("header");
   const lang = useCurrentLanguage();
-
-  useEffect(() => {
-    if (isMenuOpen) {
-      const { gap } = getGapWidth("padding");
-      document.body.style.overflow = "hidden";
-      document.body.style.width = "100%";
-      document.body.style.paddingRight = `${gap}px`;
-    } else {
-      document.body.style.overflow = "";
-      document.body.style.width = "";
-      document.body.style.paddingRight = "";
-    }
-
-    return () => {
-      document.body.style.overflow = "";
-      document.body.style.width = "";
-      document.body.style.paddingRight = "";
-    };
-  }, [isMenuOpen]);
 
   const shouldShowIcon = (title: string) => {
     return ["Blog", "Github"].includes(title);
