@@ -1,5 +1,6 @@
 import React from "react";
 import ModernTechPortfolio from "./assets/modern-tech.png";
+import ChapdoBlog from "./assets/chapdo-blog.png";
 import Link from "next/link";
 
 interface ShowcaseItem {
@@ -18,6 +19,13 @@ const SHOWCASE_ITEMS: ShowcaseItem[] = [
     imageUrl: ModernTechPortfolio.src,
     badge: "Default Design",
     link: "https://nextjs-blog-template.pages.dev/",
+  },
+  {
+    title: "CHAPDO blog",
+    description: "This is Chapdo's personal blog.",
+    imageUrl: ChapdoBlog.src,
+    badge: "Chapdo blog Design",
+    link: "https://www.chapdo.life/",
   },
 ];
 

@@ -15,11 +15,14 @@ import { useTranslations } from "@/i18n";
 import { useCurrentLanguage } from "@/i18n/use-current-language";
 import { useRouter } from "next/navigation";
 import { useQueryParams } from "@/hooks/use-query-params";
+import usePreventScroll from "@/hooks/usePreventScroll";
 
 export default function Header() {
   const [{ menu: isMenuOpen = false }, setQueryParams] = useQueryParams({
     menu: "boolean",
   });
+  usePreventScroll({ isOpen: isMenuOpen });
+
   const t = useTranslations("header");
   const lang = useCurrentLanguage();
   const router = useRouter();
@@ -27,17 +30,6 @@ export default function Header() {
   const setIsMenuOpen = (value: boolean) => {
     setQueryParams({ menu: value });
   };
-
-  useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
-    return () => {
-      document.body.style.overflow = "unset";
-    };
-  }, [isMenuOpen]);
 
   const shouldShowIcon = (title: string) => {
     return ["Blog", "Github", "블로그", "깃허브"].includes(title);
