@@ -13,22 +13,13 @@ import ThemeSelector from "./theme-selector";
 import Link from "next/link";
 import { useTranslations } from "@/i18n";
 import { useCurrentLanguage } from "@/i18n/use-current-language";
+import usePreventScroll from "@/hooks/usePreventScroll";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  usePreventScroll({ isOpen: isMenuOpen });
   const t = useTranslations("header");
   const lang = useCurrentLanguage();
-
-  useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
-    return () => {
-      document.body.style.overflow = "unset";
-    };
-  }, [isMenuOpen]);
 
   const shouldShowIcon = (title: string) => {
     return ["Blog", "Github"].includes(title);
