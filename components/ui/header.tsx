@@ -14,12 +14,19 @@ import Link from "next/link";
 import { useTranslations } from "@/i18n";
 import { useCurrentLanguage } from "@/i18n/use-current-language";
 import { useRouter } from "next/navigation";
+import { useQueryParams } from "@/hooks/use-query-params";
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const [{ menu: isMenuOpen = false }, setQueryParams] = useQueryParams({
+    menu: "boolean",
+  });
   const t = useTranslations("header");
   const lang = useCurrentLanguage();
   const router = useRouter();
+
+  const setIsMenuOpen = (value: boolean) => {
+    setQueryParams({ menu: value });
+  };
 
   useEffect(() => {
     if (isMenuOpen) {
@@ -33,7 +40,7 @@ export default function Header() {
   }, [isMenuOpen]);
 
   const shouldShowIcon = (title: string) => {
-    return ["Blog", "Github"].includes(title);
+    return ["Blog", "Github", "블로그", "깃허브"].includes(title);
   };
 
   const items = [
@@ -126,21 +133,16 @@ export default function Header() {
         <div className="flex flex-col px-6 py-4">
           <div className="flex flex-col gap-6 mb-auto">
             {items.map((item) => (
-              <li
+              <Link
                 key={item.title}
-                onClick={() => {
-                  router.push(item.href);
-                  requestAnimationFrame(() => {
-                    setIsMenuOpen(false);
-                  });
-                }}
-                className="text-h3 text-primary flex items-center gap-1"
+                href={item.href}
+                className="text-h3 text-primary flex items-start gap-1"
               >
                 {item.title}
                 {shouldShowIcon(item.title) && (
-                  <ArrowUpRightIcon className="w-4 h-4" />
+                  <ArrowUpRightIcon className="w-2 h-2" />
                 )}
-              </li>
+              </Link>
             ))}
           </div>
 
