@@ -13,16 +13,26 @@ import ThemeSelector from "./theme-selector";
 import Link from "next/link";
 import { useTranslations } from "@/i18n";
 import { useCurrentLanguage } from "@/i18n/use-current-language";
+import { useRouter } from "next/navigation";
+import { useQueryParams } from "@/hooks/use-query-params";
 import usePreventScroll from "@/hooks/usePreventScroll";
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const [{ menu: isMenuOpen = false }, setQueryParams] = useQueryParams({
+    menu: "boolean",
+  });
   usePreventScroll({ isOpen: isMenuOpen });
+
   const t = useTranslations("header");
   const lang = useCurrentLanguage();
+  const router = useRouter();
+
+  const setIsMenuOpen = (value: boolean) => {
+    setQueryParams({ menu: value });
+  };
 
   const shouldShowIcon = (title: string) => {
-    return ["Blog", "Github"].includes(title);
+    return ["Blog", "Github", "블로그", "깃허브"].includes(title);
   };
 
   const items = [
@@ -118,11 +128,11 @@ export default function Header() {
               <Link
                 key={item.title}
                 href={item.href}
-                className="text-h3 text-primary flex items-center gap-1"
+                className="text-h3 text-primary flex items-start gap-1"
               >
                 {item.title}
                 {shouldShowIcon(item.title) && (
-                  <ArrowUpRightIcon className="w-4 h-4" />
+                  <ArrowUpRightIcon className="w-2 h-2" />
                 )}
               </Link>
             ))}
