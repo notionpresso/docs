@@ -2,7 +2,8 @@
 
 import { cn } from "@/lib/utils";
 import { LanguageSelector } from "./language-selector";
-import { SNS } from "@/constants/constants";
+import { SNS_LIST } from "@/constants/constants";
+import Image from "next/image";
 import {
   ArrowUpRightIcon,
   Bars3Icon,
@@ -144,13 +145,15 @@ export default function Header() {
               <ThemeSelector variant="orange" />
             </div>
             <div className={cn("flex gap-4")}>
-              {SNS.map((item) => (
-                <a
-                  key={item.title}
-                  href={item.href}
-                  className={cn("text-primary-400")}
-                >
-                  {item.title}
+              {SNS_LIST.map((item) => (
+                <a key={item.name} href={item.url} target="_blank">
+                  <Image
+                    src={item.imgUrl}
+                    alt={item.name}
+                    width={20}
+                    height={20}
+                    className="w-5 h-5"
+                  />
                 </a>
               ))}
             </div>

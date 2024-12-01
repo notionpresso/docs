@@ -1,10 +1,20 @@
-export const SNS = [
+export const SNS_LIST = [
   {
-    title: "Discord",
-    href: "https://discord.gg/8Vx2vUd",
+    id: 1,
+    name: "Github",
+    url: "https://github.com/notionpresso",
+    imgUrl: "/sns/github.png",
   },
   {
-    title: "X",
-    href: "https://x.com/notionpres81989",
+    id: 2,
+    name: "X",
+    url: "https://x.com/notionpres81989",
+    imgUrl: "/sns/x.webp",
   },
-];
+  {
+    id: 3,
+    name: "Discord",
+    url: "https://discord.gg/yAjKwDb7xR",
+    imgUrl: "/sns/discord.png",
+  },
+] as const;

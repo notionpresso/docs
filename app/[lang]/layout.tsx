@@ -5,6 +5,7 @@ import Header from "@/components/ui/header";
 import Script from "next/script";
 import TranslationsProvider from "@/i18n/translations-provider";
 import { getServerTranslations } from "@/i18n";
+import Footer from "@/components/ui/footer";
 
 const pretendard = localFont({
   src: "../fonts/Pretendard-Regular.woff",
@@ -73,6 +74,7 @@ export default function RootLayout({
           <TranslationsProvider lang={params.lang}>
             <Header />
             <main className="dark:bg-black">{children}</main>
+            <Footer />
           </TranslationsProvider>
         </ThemeProvider>
       </body>
