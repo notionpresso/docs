@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
-import Link from "next/link";
 import { ChevronDownIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
+import Link from "next/link";
+import { useState } from "react";
 import ThemeSelector from "../ui/theme-selector";
 
 type Document = {
@@ -77,7 +77,7 @@ export default function MobileSidebar({
                   {docs.map((doc) => (
                     <li key={doc.slug} className="mb-2">
                       <Link
-                        href={`/${lang}/guide/${doc.group}/${doc.slug}`}
+                        href={`/${lang}/docs/${doc.group}/${doc.slug}`}
                         className={`flex items-center gap-2 p-2 rounded ${
                           currentSlug === doc.slug && currentGroup === doc.group
                             ? "bg-gray-900 text-white"
