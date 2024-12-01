@@ -24,7 +24,9 @@ const THEMELIST = [
 export function ThemeSelector({ variant = "black" }: ThemeSelectorProps) {
   const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [position, setPosition] = useState<"top" | "bottom">("bottom");
   const popoverRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
   const containerRef = useClickOutside(() => setIsOpen(false));
 
   const { theme, setTheme } = useTheme();
@@ -32,6 +34,31 @@ export function ThemeSelector({ variant = "black" }: ThemeSelectorProps) {
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  useEffect(() => {
+    const updatePosition = () => {
+      if (!buttonRef.current || !popoverRef.current) return;
+
+      const buttonRect = buttonRef.current.getBoundingClientRect();
+      const popoverHeight = popoverRef.current.offsetHeight;
+      const windowHeight = window.innerHeight;
+
+      const spaceBelow = windowHeight - buttonRect.bottom;
+      const spaceAbove = buttonRect.top;
+
+      setPosition(
+        spaceBelow < popoverHeight && spaceAbove > spaceBelow
+          ? "top"
+          : "bottom",
+      );
+    };
+
+    if (isOpen) {
+      updatePosition();
+      window.addEventListener("resize", updatePosition);
+      return () => window.removeEventListener("resize", updatePosition);
+    }
+  }, [isOpen]);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -54,6 +81,7 @@ export function ThemeSelector({ variant = "black" }: ThemeSelectorProps) {
   return (
     <div ref={containerRef} className="relative inline-block">
       <button
+        ref={buttonRef}
         onClick={() => setIsOpen(!isOpen)}
         className={cn(
           "inline-flex items-center justify-center gap-1 rounded-lg p-2",
@@ -75,7 +103,8 @@ export function ThemeSelector({ variant = "black" }: ThemeSelectorProps) {
         <div
           ref={popoverRef}
           className={cn(
-            "absolute right-0 mt-2 z-30",
+            "absolute right-0 z-30",
+            position === "bottom" ? "mt-2" : "mb-2 bottom-full",
             "bg-white dark:bg-neutral-900",
             "rounded-lg shadow-lg",
             "border border-neutral-200 dark:border-neutral-700",
