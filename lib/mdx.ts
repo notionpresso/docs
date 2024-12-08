@@ -3,9 +3,6 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { remark } from "remark";
-import html from "remark-html";
-import gfm from "remark-gfm";
 import { getGroupOrder, GroupId } from "@/constants/group";
 
 const contentDirectory = path.join(process.cwd(), "content", "guide");
@@ -46,14 +43,12 @@ function getAllDocumentsRecursive(dir: string, lang: string): Document[] {
       const fileContents = fs.readFileSync(entryPath, "utf8");
       const { data, content } = matter(fileContents);
       const groupOrder = getGroupOrder(data.group as GroupId);
-      const processedContent = remark().use(gfm).use(html).processSync(content);
-      const contentHtml = processedContent.toString();
 
       documents.push({
         slug: data.slug,
         title: data.title || "Untitled",
         group: data.group || "",
-        content: contentHtml,
+        content: content,
       });
     }
   });
