@@ -10351,7 +10351,7 @@
           {
             "type": "text",
             "text": {
-              "content": "// cli 설치\nnpm install -g @notionpress/cli\n\n// 노션 데이터 프로젝트에 복사하기\nnpx npresso --page {{페이지 주소}} --auth {{노션 api key}}",
+              "content": "// cli 설치\nnpm install -g @notionpresso/cli\n\n// 노션 데이터 프로젝트에 복사하기\nnpx npresso --page {{페이지 주소}} --auth {{노션 api key}}",
               "link": null
             },
             "annotations": {
@@ -10362,7 +10362,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "// cli 설치\nnpm install -g @notionpress/cli\n\n// 노션 데이터 프로젝트에 복사하기\nnpx npresso --page {{페이지 주소}} --auth {{노션 api key}}",
+            "plain_text": "// cli 설치\nnpm install -g @notionpresso/cli\n\n// 노션 데이터 프로젝트에 복사하기\nnpx npresso --page {{페이지 주소}} --auth {{노션 api key}}",
             "href": null
           }
         ],
