@@ -12300,7 +12300,7 @@
           {
             "type": "text",
             "text": {
-              "content": "// Install CLI\nnpm install -g @notionpress/cli\n\n// Copy Notion data to your project\nnpx npresso --page {{page-url}} --auth {{notion-api-key}}\n",
+              "content": "// Install CLI\nnpm install -g @notionpresso/cli\n\n// Copy Notion data to your project\nnpx npresso --page {{page-url}} --auth {{notion-api-key}}\n",
               "link": null
             },
             "annotations": {
@@ -12311,7 +12311,7 @@
               "code": false,
               "color": "default"
             },
-            "plain_text": "// Install CLI\nnpm install -g @notionpress/cli\n\n// Copy Notion data to your project\nnpx npresso --page {{page-url}} --auth {{notion-api-key}}\n",
+            "plain_text": "// Install CLI\nnpm install -g @notionpresso/cli\n\n// Copy Notion data to your project\nnpx npresso --page {{page-url}} --auth {{notion-api-key}}\n",
             "href": null
           }
         ],
